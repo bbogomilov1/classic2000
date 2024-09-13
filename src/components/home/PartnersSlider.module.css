@@ -1,0 +1,23 @@
+.sliderContainer {
+  padding: 10px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  max-width: 300px;
+  max-height: 120px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.logo:hover {
+  filter: none;
+}

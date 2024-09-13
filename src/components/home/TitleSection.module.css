@@ -1,0 +1,27 @@
+.titleContainer {
+  font-family: Verdana, sans-serif;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  width: auto;
+  text-align: center;
+}
+
+.title {
+  font-variant: all-small-caps;
+  font-size: 2.5rem;
+  padding-bottom: 2%;
+}
+
+.description {
+  font-size: 1.3rem;
+  width: 80%;
+  margin: 0.7% 0;
+  line-height: 1.5;
+  text-align: justify;
+  text-indent: 2rem;
+  color: var(--primary-color);
+}

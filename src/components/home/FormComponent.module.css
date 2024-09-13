@@ -1,0 +1,137 @@
+.container {
+  font-family: Verdana, sans-serif;
+  color: var(--primary-color);
+  background-color: #d3e2ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  padding-bottom: 6%;
+  width: auto;
+  text-align: center;
+}
+
+.title {
+  font-variant: all-small-caps;
+  font-size: 2.5rem;
+  padding-bottom: 2%;
+}
+
+.formContainer {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  border-bottom: 2px solid black;
+
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.formRow {
+  width: -webkit-fill-available;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.formImg {
+  height: 200px;
+}
+
+.firstRowInput {
+  background-color: #ecf1fb;
+}
+
+.secondRowInput {
+  background-color: #d3e2ff;
+}
+
+.thirdRowInput {
+  background-color: #b8d0fe;
+  width: -webkit-fill-available;
+}
+
+.fourthRowInput {
+  background-color: #9db5fd;
+  width: -webkit-fill-available;
+}
+
+.firstRowInput,
+.secondRowInput,
+.thirdRowInput,
+.fourthRowInput {
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 12px 15px;
+  margin: 5px;
+  border-radius: 8px;
+  color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.firstRowInput::placeholder,
+.secondRowInput::placeholder,
+.thirdRowInput::placeholder,
+.fourthRowInput::placeholder {
+  font-family: Verdana, sans-serif;
+  font-variant: all-small-caps;
+
+  color: var(--primary-color);
+}
+
+.firstRowInput:focus,
+.secondRowInput:focus,
+.thirdRowInput:focus,
+.fourthRowInput:focus {
+  border-color: none; /* Bluish border on focus */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Soft glow on focus */
+  outline: none;
+  background-color: white;
+}
+
+.submitButton {
+  background-color: var(--primary-color);
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 12px 25px;
+  margin-top: 5px;
+  font-size: 16px;
+  color: white;
+  font-family: Verdana, sans-serif;
+  font-variant: all-small-caps;
+  font-weight: bold;
+  width: auto;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.submitButton:active {
+  transform: translateY(0);
+}
+
+/* Responsive design */
+/* @media (max-width: 768px) {
+  .formRow {
+    flex-direction: column;
+  }
+
+  input[type="text"], input[type="email"], input[type="tel"] {
+    margin-bottom: 10px;
+  }
+
+  .formImg {
+    display: none;
+  }
+} */

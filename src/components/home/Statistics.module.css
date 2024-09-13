@@ -1,0 +1,58 @@
+.container {
+  position: relative;
+  font-family: Verdana, sans-serif;
+  height: 100%;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  text-align: center;
+  z-index: 1;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../../static/road.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.title {
+  font-variant: all-small-caps;
+  font-size: 2.5rem;
+  padding-bottom: 2%;
+}
+
+.statisticsContainer {
+  width: 100%;
+}
+
+.statisticsRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.statisticsCol {
+  padding: 2% 1%;
+  width: 100%;
+  font-variant: all-small-caps;
+  text-align: center;
+}
+
+.statisticsIcon {
+  height: 3em;
+}
+
+.statisticsNum {
+  font-size: 3em;
+}
