@@ -41,13 +41,17 @@
   &:hover {
     background-color: aliceblue;
     box-shadow: 3px 3px 5px 0px var(--secondary-color);
-    cursor: pointer;
   }
 }
 
 .offersImg {
   height: 200px;
   border-radius: 15px 0px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  &:hover {
+    filter: none;
+  }
 }
 
 .offersDescription {

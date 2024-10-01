@@ -1,0 +1,48 @@
+.container {
+  font-family: Verdana, sans-serif;
+  color: var(--primary-color);
+  background-color: #d3e2ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 20%;
+  padding-bottom: 6%;
+  width: auto;
+}
+
+.contactsContainer {
+  width: 100%;
+}
+
+.title {
+  font-variant: all-small-caps;
+  font-size: 2.5rem;
+  padding-bottom: 2%;
+}
+
+.statisticsIcon {
+  color: var(--secondary-color);
+  padding-right: 10px;
+}
+
+.contactsSubtitle {
+  font-size: 1.3rem;
+  margin: 0.7% 0;
+  padding: 3% 0%;
+  line-height: 1.5;
+  text-indent: 1rem;
+  color: var(--primary-color);
+}
+
+.contactsDescription {
+  font-size: 1rem;
+  margin: 0.7% 0;
+  text-indent: 2rem;
+  color: var(--primary-color);
+}
+
+.contactsDescription a {
+  text-decoration: none;
+  color: var(--primary-color);
+}

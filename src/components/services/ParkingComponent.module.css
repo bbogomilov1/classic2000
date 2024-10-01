@@ -1,0 +1,65 @@
+.container {
+  font-family: Verdana, sans-serif;
+  color: var(--primary-color);
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  width: auto;
+  text-align: center;
+  padding-bottom: 0%;
+}
+
+.title {
+  font-variant: all-small-caps;
+  font-size: 2.5rem;
+}
+
+.description {
+  font-family: Verdana, sans-serif;
+  font-variant: all-small-caps;
+  font-size: 1.3rem;
+  width: 60%;
+  margin: 0.7% 0;
+  padding-bottom: 3%;
+  line-height: 1.5;
+  text-align: center;
+  text-indent: 2rem;
+  color: var(--primary-color);
+}
+
+.storageRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.storageCol {
+  padding: 5%;
+  width: 25%;
+  font-variant: all-small-caps;
+  margin: 1%;
+}
+
+.storageIcon {
+  width: 3em;
+  height: 3em;
+  color: var(--background-color);
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.storageDescription {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.storageDescriptionList {
+  text-align: left;
+  padding-left: 40px;
+}

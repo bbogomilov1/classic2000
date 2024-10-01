@@ -1,5 +1,5 @@
-import { Col, Container, Row } from "react-bootstrap";
 import styles from "./OurOffers.module.css";
+import { Col, Container, Row } from "react-bootstrap";
 import goodsImage from "../../static/goods.png";
 import servicesImage from "../../static/services.jpg";
 import storagesImage from "../../static/storages.jpg";
@@ -11,7 +11,15 @@ const OurOffers = () => {
       <h1 className={styles.title}>Какво ви предлагаме</h1>
       <Container className={styles.offersContainer}>
         <Row className={styles.offersRow}>
-          <Col className={styles.offersCol}>
+          <Col
+            className={styles.offersCol}
+            onClick={() => {
+              const element = document.getElementById("transport");
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
             <h2>Транспорт на стоки</h2>
             <img src={goodsImage} alt="goods" className={styles.offersImg} />
             <ul className={styles.offersDescription}>
@@ -22,7 +30,15 @@ const OurOffers = () => {
               <li>Възможности за комплектни товари и групажни пратки</li>
             </ul>
           </Col>
-          <Col className={styles.offersCol}>
+          <Col
+            className={styles.offersCol}
+            onClick={() => {
+              const element = document.getElementById("services");
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
             <h2>Сервизна дейност</h2>
             <img
               src={servicesImage}
@@ -39,7 +55,15 @@ const OurOffers = () => {
               <li>заваръчни дейности</li>
             </ul>
           </Col>
-          <Col className={styles.offersCol}>
+          <Col
+            className={styles.offersCol}
+            onClick={() => {
+              const element = document.getElementById("storage");
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
             <h2>Складиране</h2>
             <img
               src={storagesImage}
@@ -54,7 +78,15 @@ const OurOffers = () => {
               <li>Товаро - разтоварни операции с мотокар до 4 тона</li>
             </ul>
           </Col>
-          <Col className={styles.offersCol}>
+          <Col
+            className={styles.offersCol}
+            onClick={() => {
+              const element = document.getElementById("parking");
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
             <h2>ТИР Паркинг</h2>
             <img
               src={parkingImage}

@@ -1,0 +1,67 @@
+.container {
+  font-family: Verdana, sans-serif;
+  color: var(--primary-color);
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  width: auto;
+  text-align: center;
+  padding-bottom: 5%;
+  position: relative;
+  z-index: 1;
+}
+
+.container::before {
+  content: "";
+  background-image: url("../../static/warehouse.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+  filter: grayscale(100%);
+}
+
+.title {
+  font-variant: all-small-caps;
+  font-size: 2.5rem;
+}
+
+.storageDescription {
+  font-family: Verdana, sans-serif;
+  font-variant: all-small-caps;
+  color: var(--primary-color);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.1rem;
+  width: 80%;
+  font-weight: bold;
+}
+
+.storageDescriptionList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  list-style-type: none;
+}
+
+.storageDescriptionListItem {
+  color: var(--primary-color);
+  border-radius: 5px;
+  font-family: Verdana, sans-serif;
+  font-variant: all-small-caps;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: 2px solid var(--primary-color);
+  padding: 20px 10px;
+  margin: 10px;
+  width: 30%;
+}

@@ -6,7 +6,7 @@ import inquiryImg from "../../static/inquiry.png";
 const FormComponent = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Бързо запитване</h1>
+      <h1 className={styles.title}>Изпрати запитване</h1>
       <Form className={styles.formContainer}>
         <Row className={styles.formRow}>
           <Col sm="4">
@@ -59,7 +59,7 @@ const FormComponent = () => {
                 type="submit"
                 className={styles.submitButton}
               >
-                Изпрати запитване
+                Изпрати
               </Button>
             </Row>
           </Col>

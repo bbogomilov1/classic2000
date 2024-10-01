@@ -1,0 +1,72 @@
+.container {
+  font-family: Verdana, sans-serif;
+  color: var(--primary-color);
+  background-color: #d3e2ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  width: auto;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.title {
+  font-variant: all-small-caps;
+  font-size: 2.5rem;
+}
+
+.description {
+  font-family: Verdana, sans-serif;
+  font-variant: all-small-caps;
+  font-size: 1.3rem;
+  width: 60%;
+  margin: 0.7% 0;
+  padding-bottom: 3%;
+  line-height: 1.5;
+  text-align: center;
+  text-indent: 2rem;
+  color: var(--primary-color);
+}
+
+.servicesContainer {
+  width: 100%;
+}
+
+.servicesRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.servicesCol {
+  padding: 2%;
+  width: 35%;
+  font-variant: all-small-caps;
+  margin: 1%;
+  background-color: var(--background-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px var(--primary-color);
+}
+
+.servicesIcon {
+  width: 3em;
+  height: 3em;
+  color: var(--background-color);
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.servicesDescription {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.servicesDescriptionList {
+  text-align: left;
+  padding-left: 40px;
+}

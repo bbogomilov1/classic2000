@@ -1,0 +1,40 @@
+.container {
+  font-family: Verdana, sans-serif;
+  color: var(--background-color);
+  background: linear-gradient(172deg, #436bb9, transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  width: auto;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.title {
+  font-family: Verdana, sans-serif;
+  font-variant: all-small-caps;
+  font-size: 2rem;
+  width: 70%;
+}
+
+.presentationButton {
+  background-image: url(../../static/road.png);
+  background-size: cover;
+  background-position: center;
+  color: var(--background-color);
+  font-family: Verdana, sans-serif;
+  font-size: 2em;
+  border: 2px solid var(--background-color);
+  padding: 4% 10%;
+  border-radius: 5px;
+  font-variant: all-small-caps;
+  margin: 0% 1%;
+  cursor: pointer;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+}

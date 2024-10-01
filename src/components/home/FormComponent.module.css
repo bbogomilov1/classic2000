@@ -19,13 +19,11 @@
 }
 
 .formContainer {
-  width: 60%;
   display: flex;
   justify-content: center;
   background-color: white;
   padding: 20px;
   border-bottom: 2px solid black;
-
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
 }
@@ -40,7 +38,7 @@
 }
 
 .formImg {
-  height: 200px;
+  height: 100px;
 }
 
 .firstRowInput {
@@ -71,26 +69,21 @@
   padding: 12px 15px;
   margin: 5px;
   border-radius: 8px;
-  color: #f9f9f9;
-  transition: border-color 0.3s ease;
-}
-
-.firstRowInput::placeholder,
-.secondRowInput::placeholder,
-.thirdRowInput::placeholder,
-.fourthRowInput::placeholder {
-  font-family: Verdana, sans-serif;
-  font-variant: all-small-caps;
-
   color: var(--primary-color);
+  transition: border-color 0.3s ease;
+  &::placeholder {
+    font-family: Verdana, sans-serif;
+    font-variant: all-small-caps;
+    color: var(--primary-color);
+  }
 }
 
 .firstRowInput:focus,
 .secondRowInput:focus,
 .thirdRowInput:focus,
 .fourthRowInput:focus {
-  border-color: none; /* Bluish border on focus */
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Soft glow on focus */
+  border-color: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
   outline: none;
   background-color: white;
 }

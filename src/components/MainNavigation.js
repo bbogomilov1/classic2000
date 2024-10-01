@@ -5,12 +5,12 @@ import styles from "./MainNavigation.module.css";
 
 const navItems = [
   { path: "/", label: "Начало" },
-  { path: "/about", label: "За нас" },
+  { path: "/about-us", label: "За нас" },
   { path: "/services", label: "Услуги" },
   { path: "/transport", label: "Транспорт" },
-  { path: "/fleet", label: "Автопарк" },
-  { path: "/documents", label: "Документи" },
-  { path: "/gallery", label: "Снимки" },
+  { path: "/autopark", label: "Автопарк" },
+  // { path: "/documents", label: "Документи" },
+  { path: "/gallery", label: "Галерия" },
   { path: "/contacts", label: "Контакти" },
 ];
 

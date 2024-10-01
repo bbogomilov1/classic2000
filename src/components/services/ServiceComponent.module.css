@@ -1,0 +1,55 @@
+.container {
+  font-family: Verdana, sans-serif;
+  color: var(--background-color);
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  width: auto;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.title {
+  font-variant: all-small-caps;
+  font-size: 2.5rem;
+}
+
+.servicesDescription {
+  width: 50%;
+  font-family: Verdana, sans-serif;
+  font-variant: all-small-caps;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  box-shadow: 6px 6px 0px var(--secondary-color);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 30px;
+}
+
+.servicesDescriptionList {
+  text-align: left;
+  padding-left: 10rem;
+}
+
+.servicesTelNumsContainer {
+  padding: 20px;
+}
+
+.servicesTelNums {
+  text-decoration: none;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.servicesTelNums:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  animation: 0.3s ease-in-out;
+}
