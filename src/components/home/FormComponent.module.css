@@ -19,6 +19,7 @@
 }
 
 .formContainer {
+  /* width: 60%; */
   display: flex;
   justify-content: center;
   background-color: white;
@@ -39,6 +40,7 @@
 
 .formImg {
   height: 100px;
+  padding: 0px 20px;
 }
 
 .firstRowInput {
