@@ -1,5 +1,5 @@
 import { Container, Navbar } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../static/logo.png";
 import styles from "./MainNavigation.module.css";
 
@@ -31,9 +31,17 @@ const MainNavigation = () => {
         <ul className={styles.navbarListContainer}>
           {navItems.map((item) => (
             <li key={item.path}>
-              <Link to={item.path} className={styles.navLink}>
+              <NavLink
+                to={item.path}
+                className={({ isActive }) =>
+                  isActive
+                    ? styles.navLink + " " + styles.activeNavLink
+                    : styles.navLink
+                }
+                end
+              >
                 {item.label}
-              </Link>
+              </NavLink>
             </li>
           ))}
         </ul>

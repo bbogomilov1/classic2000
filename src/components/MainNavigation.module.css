@@ -30,3 +30,8 @@
     color: var(--secondary-color);
   }
 }
+
+.activeNavLink {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
