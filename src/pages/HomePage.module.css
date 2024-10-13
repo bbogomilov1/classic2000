@@ -1,5 +1,11 @@
+.homeContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .homeImage {
-  width: 100%;
+  width: 50%;
   height: 100%;
 }
 

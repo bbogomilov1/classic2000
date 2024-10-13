@@ -1,5 +1,6 @@
 import styles from "./TransportPage.module.css";
 import transportImage from "../static/our-services.png";
+import aboutImage from "../static/autopark.png";
 
 import TransportTitleSection from "../components/transport/TransportTitleSection";
 import DomesticTransportComponent from "../components/transport/DomesticTransportComponent";
@@ -14,6 +15,7 @@ function TransportPage() {
         alt="transport"
         className={styles.transportImage}
       />
+      <img src={aboutImage} alt="transport" className={styles.transportImage} />
 
       <TransportTitleSection />
       <DomesticTransportComponent />

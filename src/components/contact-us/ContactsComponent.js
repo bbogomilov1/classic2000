@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPhoneVolume,
   faClock,
-  faWrench,
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -18,29 +17,26 @@ const ContactsComponent = () => {
             icon={faPhoneVolume}
             className={styles.statisticsIcon}
           />
-          Телефон
+          Телефон:
         </h2>
         <div className={styles.contactsDescription}>
-          <a href="tel:+35994626060">+359 94 62 60 60</a>
+          <a href="tel:+35994626060">+359 94 62 60 60 - офис</a>
+          <a href="tel:+359899610075">
+            +359 899 610075 - сервиз (от 09ч до 17ч)
+          </a>
         </div>
 
         <h2 className={styles.contactsSubtitle}>
           {" "}
           <FontAwesomeIcon icon={faClock} className={styles.statisticsIcon} />
-          Работно време (офис)
+          Работно време офис и сервиз:
         </h2>
         <p className={styles.contactsDescription}>
-          Понеделник - Петък 09:00 - 18:00 часа
+          Понеделник - петък 09:00 - 17.30 ч.
         </p>
         <p className={styles.contactsDescription}>
-          Почивни дни - Събота и Неделя
+          Почивни дни - събота и неделя
         </p>
-
-        <h2 className={styles.contactsSubtitle}>
-          <FontAwesomeIcon icon={faWrench} className={styles.statisticsIcon} />
-          Работно време (мобилен сервиз)
-        </h2>
-        <p className={styles.contactsDescription}>Без почивен ден</p>
 
         <h2 className={styles.contactsSubtitle}>
           <FontAwesomeIcon
@@ -52,7 +48,7 @@ const ContactsComponent = () => {
         <p className={styles.contactsDescription}>
           Южна промишлена зона (до КАТ)
         </p>
-        <p className={styles.contactsDescription}>3700 Видин, България</p>
+        <p className={styles.contactsDescription}>Гр. Видин, България</p>
         <p className={styles.contactsDescription}>
           GPS локация: 43.972651, 22.868933
         </p>

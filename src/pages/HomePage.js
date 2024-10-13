@@ -4,7 +4,6 @@ import TitleSection from "../components/home/TitleSection.js";
 import Statistics from "../components/home/Statistics.js";
 import OurOffers from "../components/home/OurOffers.js";
 import FormComponent from "../components/home/FormComponent.js";
-import PartnersSlider from "../components/home/PartnersSlider.js";
 
 import { useNavigate } from "react-router-dom";
 
@@ -17,9 +16,12 @@ function HomePage() {
 
   return (
     <div>
-      <img src={homeImage} alt="transport" className={styles.homeImage} />
+      <div className={styles.homeContainer}>
+        <img src={homeImage} alt="transport" className={styles.homeImage} />
 
-      <TitleSection />
+        <TitleSection />
+      </div>
+
       <Statistics />
       <OurOffers />
       <div className={styles.seeMoreButtonContainer}>
@@ -28,7 +30,6 @@ function HomePage() {
         </button>
       </div>
       <FormComponent />
-      <PartnersSlider />
     </div>
   );
 }

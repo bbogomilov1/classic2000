@@ -1,7 +1,7 @@
 import AboutUsCompoent from "../components/about-us/AboutUsComponent";
 import styles from "./AboutUsPage.module.css";
 import aboutImage from "../static/about-us.png";
-import PresentationButton from "../components/about-us/PresentationButton";
+import transportImage from "../static/our-services.png";
 import OurGoals from "../components/about-us/OurGoals";
 
 const cardContent = {
@@ -11,12 +11,12 @@ const cardContent = {
       <h3>Нашата мисия е:</h3>
       <ul className={styles.cardContentList}>
         <li className={styles.cardContentListItem}>
-          Успешно сътрудничество в дългосрочен план с производители и търговци
-          на едро, търсещи нови възможности за развитие;
+          Успешно сътрудничество в дългосрочен план с различните видове
+          товародатели и изпълнение на желаните от тях изисквания за транспорт;
         </li>
         <li className={styles.cardContentListItem}>
-          Постоянно да търсим нови методи и начини за подобрение на предлаганите
-          от нас услуги;
+          Да бъдем социално и обществено отговорни и да продължим да осигуряваме
+          работни места за нашия регион;
         </li>
         <li className={styles.cardContentListItem}>
           Да бъдем партньор на своите клиенти, допринасяйки към взаимните бизнес
@@ -28,23 +28,21 @@ const cardContent = {
   secondCardFront: <h1 className={styles.cardFrontContent}>Нашата визия</h1>,
   secondCardBack: (
     <>
-      <h3>
-        Ние, в Класик2000 ООД, целим непрекъснато да се развиваме във всички
-        важни насоки за нашата дейност, като:
-      </h3>
+      <h3>Нашата визия е:</h3>
       <ul className={styles.cardContentList}>
         <li className={styles.cardContentListItem}>
-          разширяваме набора от предлагани услуги;
+          Постоянно да търсим нови начини и методи за оптимизация на работните
+          процеси;
         </li>
         <li className={styles.cardContentListItem}>
-          увеличаваме броя на превозните средства в автопарка;
+          Да поддържаме и/или увеличаваме броя на превозните средства в
+          автопарка;
         </li>
         <li className={styles.cardContentListItem}>
-          успешно развиваме един задружен и мотивиран екип;
+          Успешно да развиваме един задружен и мотивиран екип;
         </li>
         <li className={styles.cardContentListItem}>
-          подобряваме своята позиция и поддържаме своето добро име сред
-          участниците в пазара на националния и международния транспорт.
+          Да поддържаме своето добро име и позиция на транспортния пазар.
         </li>
       </ul>
     </>
@@ -54,10 +52,10 @@ const cardContent = {
 function AboutUsPage() {
   return (
     <div>
+      <img src={transportImage} alt="transport" className={styles.aboutImage} />
       <img src={aboutImage} alt="transport" className={styles.aboutImage} />
 
       <AboutUsCompoent />
-      <PresentationButton />
       <div className={styles.goalsContainer}>
         <OurGoals
           cardFront={cardContent.firstCardFront}

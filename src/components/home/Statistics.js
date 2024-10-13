@@ -8,6 +8,7 @@ import {
   faStar,
   faTruck,
   faUsers,
+  faMapLocationDot,
   faRoad,
   faEarthAmericas,
   faComments,
@@ -27,19 +28,30 @@ const statNums = [
     icon: faTruck,
     label: (
       <>
-        тежкотоварни <br /> композиции
+        товарни <br /> автомобили
       </>
     ),
-    num: 72,
+    num: 50,
   },
   {
     icon: faUsers,
     label: (
       <>
-        oтдадени <br /> служители
+        брой <br /> служители
       </>
     ),
     num: 84,
+  },
+  {
+    icon: faMapLocationDot,
+    label: (
+      <>
+        курсове
+        <br />
+        през 2024 г.
+      </>
+    ),
+    num: "-",
   },
   {
     icon: faRoad,

@@ -36,7 +36,7 @@
   text-align: center;
   border: 2px solid var(--primary-color);
   border-radius: 15px 0px;
-  margin: 0% 1%;
+  margin: 1%;
   box-shadow: 3px 3px 5px 0px var(--primary-color);
   &:hover {
     background-color: aliceblue;
@@ -45,7 +45,8 @@
 }
 
 .offersImg {
-  height: 200px;
+  height: 250px;
+  padding-top: 20px;
   border-radius: 15px 0px;
   filter: grayscale(100%);
   transition: filter 0.3s ease;
