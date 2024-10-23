@@ -28,10 +28,21 @@
   padding: 1% 0%;
 }
 
+.footerLogo {
+  filter: invert(1) grayscale(1) brightness(2);
+}
+
 .footerIcon {
   font-size: 1.2rem;
 }
 
-.footerImg {
-  width: 100%;
+@media (max-width: 768px) {
+  .footerRow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerList {
+    align-items: center;
+  }
 }

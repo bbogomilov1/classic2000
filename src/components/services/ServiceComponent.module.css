@@ -53,3 +53,39 @@
   background-color: var(--secondary-color);
   animation: 0.3s ease-in-out;
 }
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .servicesDescription {
+    width: 90%;
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .servicesDescriptionList {
+    padding-left: 2rem;
+  }
+
+  .servicesTelNums {
+    padding: 8px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .servicesDescription {
+    font-size: 0.9rem;
+  }
+
+  .servicesTelNums {
+    width: 100%;
+    margin: 5px 0;
+  }
+}

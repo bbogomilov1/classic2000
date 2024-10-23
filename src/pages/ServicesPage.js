@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import OurOffers from "../components/home/OurOffers";
+import OurServices from "../components/services/OurServices";
 import TransportComponent from "../components/services/TransportComponent";
 import ServiceComponent from "../components/services/ServiceComponent";
 import StorageComponent from "../components/services/StorageComponent";
@@ -11,7 +11,7 @@ function ServicesPage() {
 
   return (
     <div>
-      <OurOffers />
+      <OurServices />
       <TransportComponent />
       <ServiceComponent />
       <StorageComponent />

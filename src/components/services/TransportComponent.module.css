@@ -70,3 +70,51 @@
   text-align: left;
   padding-left: 40px;
 }
+
+@media (max-width: 768px) {
+  .servicesCol {
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+  }
+
+  .servicesRow {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    width: 90%;
+  }
+
+  .servicesIcon {
+    width: 2.5em;
+    height: 2.5em;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .servicesCol {
+    padding: 20px;
+  }
+
+  .servicesRow {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+}

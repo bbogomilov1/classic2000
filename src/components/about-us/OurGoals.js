@@ -12,7 +12,7 @@ const OurGoals = ({ cardFront, cardBack }) => {
     <div className={styles.goalsContainer}>
       <div className={styles.container}>
         <div
-          className={`${styles.flipCard}  ${isFlipped ? styles.flipped : ""}`}
+          className={`${styles.flipCard} ${isFlipped ? styles.flipped : ""}`}
         >
           <div className={styles.flipCardInner}>
             <div className={styles.flipCardFront}>

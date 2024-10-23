@@ -51,7 +51,7 @@ const statNums = [
         през 2024 г.
       </>
     ),
-    num: "-",
+    num: "1100+",
   },
   {
     icon: faRoad,
@@ -62,7 +62,7 @@ const statNums = [
         през 2024 г.
       </>
     ),
-    num: "4,7 млн",
+    num: "5,3 млн",
   },
   {
     icon: faEarthAmericas,
@@ -71,7 +71,7 @@ const statNums = [
         до държави <br /> през 2024 г.
       </>
     ),
-    num: 18,
+    num: 19,
   },
   {
     icon: faComments,

@@ -29,3 +29,25 @@
   text-indent: 2rem;
   color: var(--primary-color);
 }
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    width: 90%;
+    font-size: 1.1rem;
+    text-indent: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}

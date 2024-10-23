@@ -52,3 +52,52 @@
   text-align: left;
   padding-left: 40px;
 }
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .autoparkRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .autoparkCol {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .autoparkIcon {
+    width: 2.5em;
+    height: 2.5em;
+    padding: 15px;
+  }
+
+  .autoparkDescriptionList {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .autoparkCol {
+    padding: 10px;
+  }
+
+  .autoparkRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .autoparkDescriptionList {
+    padding-left: 10px;
+  }
+}

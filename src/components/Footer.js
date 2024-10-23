@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "./Footer.module.css";
+import logo from "../static/logo.png";
 import fond from "../static/european-regional-development-fund-opic-bul.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,8 +12,18 @@ const Footer = () => {
       <Container>
         <Row className={styles.footerRow}>
           <Col>
-            <h2>Класик 2000 ООД</h2>
+            <img
+              src={logo}
+              width="150"
+              height="150"
+              alt="React Bootstrap logo"
+              className={styles.footerLogo}
+            />
+          </Col>
+
+          <Col>
             <div className={styles.footerList}>
+              <h2>Класик 2000 ООД</h2>
               <a href="/about-us">За Класик 2000 ООД</a>
               <a href="/services">Транспортни услуги</a>
               <a href="/autopark">Автопарк</a>
@@ -24,8 +35,8 @@ const Footer = () => {
           </Col>
 
           <Col>
-            <h2>Контакти</h2>
             <div className={styles.footerList}>
+              <h2>Контакти</h2>
               <a href="tel:+35994626060">+359 94 62 60 60</a>
               <a href="tel:+359889697700">+359 889 69 77 00</a>
               <a href="tel:+359882721616">+359 882 72 16 16</a>
@@ -37,8 +48,8 @@ const Footer = () => {
           </Col>
 
           <Col>
-            <h2>Социални мрежи</h2>
             <div className={styles.footerList}>
+              <h2>Социални мрежи</h2>
               <a
                 href="https://www.facebook.com/classic2000ltd/"
                 target="_blank"
@@ -57,11 +68,6 @@ const Footer = () => {
                 страница (Twitter)
               </a>
             </div>
-          </Col>
-
-          <Col>
-            <h2>От Европейски фонд</h2>
-            <img src={fond} alt="fond" className={styles.footerImg} />
           </Col>
         </Row>
       </Container>

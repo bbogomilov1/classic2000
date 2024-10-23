@@ -56,3 +56,21 @@
 .statisticsNum {
   font-size: 3em;
 }
+
+@media (max-width: 768px) {
+  .statisticsCol {
+    flex: 1 1 50%;
+  }
+
+  .statisticsRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .statisticsCol {
+    flex: 1 1 100%;
+  }
+}

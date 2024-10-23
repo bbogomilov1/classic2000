@@ -3,7 +3,7 @@ import styles from "./TitleSection.module.css";
 const TitleSection = () => {
   return (
     <div className={styles.titleContainer}>
-      <h1 className={styles.title}>Защо ние да превозим товара ви?</h1>
+      <h1 className={styles.title}>Кои сме ние?</h1>
       <p className={styles.description}>
         Вече 20 години превозваме Вашите товари и свързваме бизнеса Ви с
         европейския пазар!

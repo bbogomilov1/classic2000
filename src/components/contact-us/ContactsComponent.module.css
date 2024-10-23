@@ -48,3 +48,41 @@
   text-decoration: none;
   color: var(--primary-color);
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 2% 10%;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .contactsSubtitle {
+    font-size: 1.2rem;
+    text-indent: 0;
+  }
+
+  .contactsDescription {
+    font-size: 0.9rem;
+    text-indent: 0;
+  }
+
+  .contactsDescription a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .contactsSubtitle {
+    font-size: 1rem;
+  }
+
+  .contactsDescription {
+    font-size: 0.8rem;
+  }
+}

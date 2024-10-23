@@ -24,3 +24,15 @@
 .cardContentListItem {
   padding-bottom: 10px;
 }
+
+@media (max-width: 768px) {
+  .goalsContainer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .goalsContainer {
+    flex-direction: column;
+  }
+}

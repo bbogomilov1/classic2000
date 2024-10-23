@@ -54,3 +54,31 @@
 .galleryItem:hover img {
   transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+  .description {
+    width: 90%;
+    font-size: 1.1rem;
+    text-indent: 0;
+  }
+
+  .galleryGrid {
+    column-count: 1;
+  }
+
+  .galleryItem img {
+    filter: none;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}

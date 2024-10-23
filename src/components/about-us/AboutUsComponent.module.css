@@ -50,3 +50,13 @@
   text-align: left;
   padding-left: 20px;
 }
+
+@media (max-width: 768px) {
+  .aboutUsRow {
+    flex-wrap: wrap;
+  }
+
+  .aboutUsCol {
+    flex: 1 1 100%;
+  }
+}
