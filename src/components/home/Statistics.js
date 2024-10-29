@@ -1,8 +1,10 @@
+import React from "react";
+import { useInView } from "react-intersection-observer";
+import CountUp from "react-countup";
 import styles from "./Statistics.module.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faStar,
@@ -47,22 +49,20 @@ const statNums = [
     label: (
       <>
         курсове
-        <br />
-        през 2024 г.
+        <br /> през 2024 г.
       </>
     ),
-    num: "1100+",
+    num: 1100,
   },
   {
     icon: faRoad,
     label: (
       <>
         километри
-        <br />
-        през 2024 г.
+        <br /> през 2024 г.
       </>
     ),
-    num: "5,3 млн",
+    num: 5300000,
   },
   {
     icon: faEarthAmericas,
@@ -84,6 +84,20 @@ const statNums = [
   },
 ];
 
+const StatisticItem = ({ icon, label, num }) => {
+  const { ref, inView } = useInView({ triggerOnce: true });
+
+  return (
+    <Col className={styles.statisticsCol} ref={ref}>
+      <FontAwesomeIcon icon={icon} className={styles.statisticsIcon} />
+      <p>{label}</p>
+      <i className={styles.statisticsNum}>
+        {inView ? <CountUp end={num} duration={1.5} separator="," /> : "0"}
+      </i>
+    </Col>
+  );
+};
+
 const Statistics = () => {
   return (
     <div className={styles.container}>
@@ -91,14 +105,12 @@ const Statistics = () => {
       <Container className={styles.statisticsContainer}>
         <Row className={styles.statisticsRow}>
           {statNums.map((statNum, index) => (
-            <Col className={styles.statisticsCol} key={index}>
-              <FontAwesomeIcon
-                icon={statNum.icon}
-                className={styles.statisticsIcon}
-              />
-              <p>{statNum.label}</p>
-              <i className={styles.statisticsNum}>{statNum.num}</i>
-            </Col>
+            <StatisticItem
+              key={index}
+              icon={statNum.icon}
+              label={statNum.label}
+              num={statNum.num}
+            />
           ))}
         </Row>
       </Container>
