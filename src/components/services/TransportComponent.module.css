@@ -72,16 +72,16 @@
 }
 
 @media (max-width: 768px) {
+  .servicesRow {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
   .servicesCol {
     width: 100%;
     margin: 10px 0;
     padding: 20px;
-  }
-
-  .servicesRow {
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
   }
 
   .title {
