@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import styles from "./Statistics.module.css";
@@ -6,6 +6,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import client from "../../contentfulClient";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import {
   faStar,
   faTruck,
@@ -16,100 +18,83 @@ import {
   faComments,
 } from "@fortawesome/free-solid-svg-icons";
 
-const statNums = [
-  {
-    icon: faStar,
-    label: (
-      <>
-        години от <br /> основаване
-      </>
-    ),
-    num: 20,
-  },
-  {
-    icon: faTruck,
-    label: (
-      <>
-        товарни <br /> автомобили
-      </>
-    ),
-    num: 50,
-  },
-  {
-    icon: faUsers,
-    label: (
-      <>
-        брой <br /> служители
-      </>
-    ),
-    num: 84,
-  },
-  {
-    icon: faMapLocationDot,
-    label: (
-      <>
-        курсове
-        <br /> през 2024 г.
-      </>
-    ),
-    num: 1100,
-  },
-  {
-    icon: faRoad,
-    label: (
-      <>
-        километри
-        <br /> през 2024 г.
-      </>
-    ),
-    num: 5300000,
-  },
-  {
-    icon: faEarthAmericas,
-    label: (
-      <>
-        до държави <br /> през 2024 г.
-      </>
-    ),
-    num: 19,
-  },
-  {
-    icon: faComments,
-    label: (
-      <>
-        владеем <br /> езици
-      </>
-    ),
-    num: 3,
-  },
-];
-
-const StatisticItem = ({ icon, label, num }) => {
-  const { ref, inView } = useInView({ triggerOnce: true });
-
-  return (
-    <Col className={styles.statisticsCol} ref={ref}>
-      <FontAwesomeIcon icon={icon} className={styles.statisticsIcon} />
-      <p>{label}</p>
-      <i className={styles.statisticsNum}>
-        {inView ? <CountUp end={num} duration={1.5} separator="," /> : "0"}
-      </i>
-    </Col>
-  );
-};
-
 const Statistics = () => {
+  const [statistics, setStatistics] = useState([]);
+
+  useEffect(() => {
+    const fetchStatistics = async () => {
+      try {
+        const response = await client.getEntries({
+          content_type: "statistics",
+          order: "fields.sortOrder",
+        });
+
+        const stats = response.items.map((item) => ({
+          icon: item.fields.icon,
+          label: item.fields.label,
+          num: item.fields.num,
+        }));
+
+        setStatistics(stats);
+      } catch (error) {
+        console.error("Error fetching statistics:", error);
+      }
+    };
+
+    fetchStatistics();
+  }, []);
+
+  const getIcon = (iconName) => {
+    switch (iconName) {
+      case "faStar":
+        return faStar;
+      case "faTruck":
+        return faTruck;
+      case "faUsers":
+        return faUsers;
+      case "faMapLocationDot":
+        return faMapLocationDot;
+      case "faRoad":
+        return faRoad;
+      case "faEarthAmericas":
+        return faEarthAmericas;
+      case "faComments":
+        return faComments;
+      default:
+        return null;
+    }
+  };
+
+  const StatisticItem = ({ icon, label, num }) => {
+    const { ref, inView } = useInView({ triggerOnce: true });
+
+    return (
+      <Col className={styles.statisticsCol} ref={ref}>
+        <FontAwesomeIcon
+          icon={getIcon(icon)}
+          className={styles.statisticsIcon}
+        />
+        <div className={styles.statisticsLabel}>
+          {label && documentToReactComponents(label)}
+        </div>
+        <i className={styles.statisticsNum}>
+          {inView ? <CountUp end={num} duration={1.5} separator="," /> : "0"}
+        </i>
+      </Col>
+    );
+  };
+
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Цифри и факти</h1>
       <Container className={styles.statisticsContainer}>
         <Row className={styles.statisticsRow}>
-          {statNums.map((statNum, index) => (
+          {statistics.map((stat, index) => (
             <StatisticItem
               key={index}
-              icon={statNum.icon}
-              label={statNum.label}
-              num={statNum.num}
+              icon={stat.icon}
+              label={stat.label}
+              num={stat.num}
             />
           ))}
         </Row>
