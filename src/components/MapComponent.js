@@ -1,36 +1,36 @@
-import React from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
-import L from "leaflet";
-
-// Fix default marker icon issues in Leaflet for React
-delete L.Icon.Default.prototype._getIconUrl;
-
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
-  iconUrl: require("leaflet/dist/images/marker-icon.png"),
-  shadowUrl: require("leaflet/dist/images/marker-shadow.png"),
-});
+import React, { useState } from "react";
+import styles from "./MapComponent.module.css";
+import {
+  GoogleMap,
+  LoadScript,
+  Marker,
+  InfoWindow,
+} from "@react-google-maps/api";
 
 const MapComponent = () => {
-  const position = [43.972651, 22.868933];
+  const position = { lat: 43.972651, lng: 22.868933 };
+  const [selected, setSelected] = useState(null);
 
   return (
-    <div style={{ width: "1300px" }}>
-      <MapContainer
-        center={position}
-        zoom={15}
-        style={{ height: "300px", width: "100%" }}
-        scrollWheelZoom={false}
-      >
-        <TileLayer
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        />
-        <Marker position={position}>
-          <Popup>A marker at coordinates [43.972651, 22.868933]</Popup>
-        </Marker>
-      </MapContainer>
+    <div className={styles.mapContainer}>
+      <LoadScript googleMapsApiKey="AIzaSyC_v2yc2Zmt2fThlyYMZP1xdIZJVTIOsaA">
+        <GoogleMap
+          center={position}
+          zoom={15}
+          style={{ height: "300px", width: "100%" }}
+          mapContainerStyle={{ height: "300px", width: "100%" }}
+        >
+          <Marker position={position} onClick={() => setSelected(position)} />
+          {selected && (
+            <InfoWindow
+              position={selected}
+              onCloseClick={() => setSelected(null)}
+            >
+              <div>A marker at coordinates [43.972651, 22.868933]</div>
+            </InfoWindow>
+          )}
+        </GoogleMap>
+      </LoadScript>
     </div>
   );
 };

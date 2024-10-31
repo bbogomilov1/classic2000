@@ -69,12 +69,17 @@
 @media (max-width: 768px) {
   .statisticsCol {
     flex: 1 1 50%;
+    padding-bottom: 20px;
   }
 
   .statisticsRow {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .statisticsLabel {
+    margin-bottom: 0px;
   }
 
   .statisticsLabel p {

@@ -22,7 +22,7 @@ const ContactsComponent = () => {
         <div className={styles.contactsDescription}>
           <a href="tel:+35994626060">+359 94 62 60 60 - офис</a>
           <a href="tel:+359899610075">
-            +359 899 610075 - сервиз (от 09ч до 17ч)
+            +359 899 610 075 - сервиз (от 09ч до 17ч)
           </a>
         </div>
 
