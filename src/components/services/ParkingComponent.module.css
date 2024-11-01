@@ -66,36 +66,37 @@
 
 @media (max-width: 768px) {
   .title {
-    font-size: 2rem; 
+    font-size: 2rem;
   }
 
   .description {
-    width: 90%; 
-    font-size: 1.1rem; 
+    width: 90%;
+    font-size: 1.1rem;
   }
 
   .storageCol {
-    width: 100%; 
-    margin: 10px 0; 
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
   }
 
   .storageIcon {
     width: 2.5em;
-    height: 2.5em; 
-    padding: 15px; 
+    height: 2.5em;
+    padding: 15px;
   }
 }
 
 @media (max-width: 480px) {
   .title {
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
   }
 
   .description {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
   }
 
   .storageDescriptionList {
-    padding-left: 2rem; 
+    padding-left: 2rem;
   }
 }

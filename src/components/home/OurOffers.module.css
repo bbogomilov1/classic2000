@@ -44,7 +44,8 @@
   }
 }
 
-.offersImg {
+.offersImg,
+.offersImgLong {
   height: 250px;
   padding-top: 20px;
   border-radius: 15px 0px;
@@ -88,6 +89,11 @@
 
   .offersImg {
     width: 330px;
+    filter: none;
+  }
+
+  .offersImgLong {
+    height: 250px;
     filter: none;
   }
 }

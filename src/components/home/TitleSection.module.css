@@ -23,4 +23,5 @@
   text-align: justify;
   text-indent: 2rem;
   color: var(--primary-color);
+  font-variant: all-small-caps;
 }

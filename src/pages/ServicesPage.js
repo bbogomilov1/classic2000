@@ -11,7 +11,7 @@ function ServicesPage() {
 
   return (
     <div>
-      <OurServices />
+      {/* <OurServices /> */}
       <TransportComponent />
       <ServiceComponent />
       <StorageComponent />

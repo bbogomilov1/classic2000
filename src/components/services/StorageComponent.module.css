@@ -70,6 +70,10 @@
   .title {
     font-size: 2rem;
   }
+
+  .storageDescriptionList {
+    padding: 0;
+  }
 }
 
 @media (max-width: 480px) {

@@ -123,7 +123,7 @@ const OurOffers = () => {
             <img
               src={servicesImage}
               alt="services"
-              className={styles.offersImg}
+              className={styles.offersImgLong}
             />
             <h2>Сервиз</h2>
             <div className={styles.offersDescription}>
