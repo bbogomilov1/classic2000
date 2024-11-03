@@ -1,10 +1,9 @@
 import styles from "./OurOffers.module.css";
-import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
 import goodsImage from "../../static/IMG_0472.jpg";
 import servicesImage from "../../static/services.png";
-import storagesImage from "../../static/storages.png";
+import storagesImage from "../../static/storages.jpg";
 import parkingImage from "../../static/parking.jpg";
 
 const OurOffers = () => {

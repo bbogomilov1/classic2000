@@ -16,7 +16,7 @@
 
 .container::before {
   content: "";
-  background-image: url("../../static/warehouse.jpg");
+  background-image: url("../../static/storages.jpg");
   background-size: cover;
   background-position: center;
   position: absolute;

@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "./Footer.module.css";
 import logo from "../static/logo.png";
-import fond from "../static/european-regional-development-fund-opic-bul.png";
+import fulllogo from "../static/logo.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faXTwitter } from "@fortawesome/free-brands-svg-icons";
@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className={styles.footerContainer}>
       <Container>
         <Row className={styles.footerRow}>
-          <Col>
+          {/* <Col>
             <img
               src={logo}
               width="150"
@@ -19,11 +19,17 @@ const Footer = () => {
               alt="React Bootstrap logo"
               className={styles.footerLogo}
             />
-          </Col>
+          </Col> */}
 
           <Col>
             <div className={styles.footerList}>
-              <h2>Класик 2000 ООД</h2>
+              <img
+                src={fulllogo}
+                width="150"
+                height="150"
+                alt="React Bootstrap logo"
+                className={styles.footerLogo}
+              />
               <a href="/about-us">За Класик 2000 ООД</a>
               <a href="/services">Транспортни услуги</a>
               <a href="/autopark">Автопарк</a>
@@ -52,14 +58,7 @@ const Footer = () => {
                   icon={faFacebook}
                   className={styles.footerIcon}
                 />{" "}
-                страница
-              </a>
-              <a href="https://twitter.com/classic20004" target="_blank">
-                <FontAwesomeIcon
-                  icon={faXTwitter}
-                  className={styles.footerIcon}
-                />{" "}
-                страница (Twitter)
+                Facebook страница
               </a>
             </div>
           </Col>

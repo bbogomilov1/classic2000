@@ -36,9 +36,9 @@ const ParkingComponent = () => {
           <FontAwesomeIcon icon={faTreeCity} className={styles.storageIcon} />
           <h2>В близост</h2>
           <ul className={styles.storageDescriptionList}>
+            <li>център град Видин;</li>
             <li>бензиностанция SHELL;</li>
-            <li>хотел и басейн Южен парк;</li>
-            <li> хранителни магазини и банки.</li>
+            <li>хранителни магазини и банки.</li>
           </ul>
         </Col>
       </Row>

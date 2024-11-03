@@ -8,7 +8,7 @@ const navItems = [
   { path: "/", label: "Начало" },
   { path: "/about-us", label: "За нас" },
   { path: "/services", label: "Услуги" },
-  { path: "/autopark", label: "Автопарк" },
+  // { path: "/autopark", label: "Автопарк" },
   { path: "/gallery", label: "Галерия" },
   { path: "/contacts", label: "Контакти" },
 ];

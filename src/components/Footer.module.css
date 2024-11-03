@@ -29,11 +29,15 @@
 }
 
 .footerLogo {
-  filter: invert(1) grayscale(1) brightness(2);
+  /* filter: invert(1) grayscale(1) brightness(2); */
+  width: 200px;
+  height: auto;
+  padding: 10px 0;
 }
 
 .footerIcon {
   font-size: 1.2rem;
+  padding-right: 5px;
 }
 
 @media (max-width: 768px) {
