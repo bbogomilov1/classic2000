@@ -33,6 +33,10 @@
   color: var(--secondary-color);
 }
 
+.logo {
+  cursor: pointer;
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
   .logo {

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Container, Navbar } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import logo from "../static/logo.png";
 import styles from "./MainNavigation.module.css";
 
@@ -15,9 +15,18 @@ const navItems = [
 
 const MainNavigation = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
+  };
+
+  const handleLogoClick = () => {
+    if (window.innerWidth >= 992) {
+      navigate("/");
+    } else {
+      toggleMenu();
+    }
   };
 
   return (
@@ -29,7 +38,7 @@ const MainNavigation = () => {
           height="80"
           className={`${styles.logo} ${isMenuOpen ? styles.rotated : ""}`}
           alt="React Bootstrap logo"
-          onClick={toggleMenu}
+          onClick={handleLogoClick}
         />
 
         <ul

@@ -7,9 +7,11 @@
   justify-content: center;
   align-items: center;
   padding: 3%;
-  width: auto;
+  width: 100%;
+  max-width: 100%;
   text-align: center;
   padding-bottom: 2%;
+  box-sizing: border-box;
 }
 
 .aboutUstitle {
@@ -19,7 +21,8 @@
 }
 
 .aboutUsContainer {
-  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .aboutUsRow {
@@ -27,6 +30,7 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
+  margin: 0;
 }
 
 .aboutUsCol {
@@ -34,7 +38,7 @@
   width: 100%;
   font-variant: all-small-caps;
   text-align: center;
-  margin: 0% 1%;
+  margin: 1% 2%;
 }
 
 .aboutUsIcon {
