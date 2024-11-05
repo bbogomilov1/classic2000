@@ -51,8 +51,8 @@
 }
 
 .aboutUsDescription {
-  text-align: left;
-  padding-left: 20px;
+  text-align: center;
+  /* padding-left: 20px; */
 }
 
 @media (max-width: 768px) {
