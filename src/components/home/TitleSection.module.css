@@ -5,11 +5,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: auto; */
+  width: auto;
   text-align: center;
 }
 
-/* .title {
+.title {
   font-variant: all-small-caps;
   font-size: 2rem;
   padding-bottom: 2%;
@@ -23,16 +23,11 @@
   align-items: center;
 }
 
-.description {
+/* .description {
   font-size: 1.2rem;
   width: 80%;
   margin: 1% 0;
   line-height: 1.5;
   color: var(--primary-color);
   font-variant: all-small-caps;
-} */
-
-/* .titleContainer {
-  text-align: center;
-  font-family: Verdana, sans-serif;
 } */
