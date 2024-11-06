@@ -7,7 +7,7 @@ import FormComponent from "../components/home/FormComponent.js";
 
 function HomePage() {
   return (
-    <div>
+    <div className={styles.container}>
       {/* <div className={styles.homeContainer}> */}
       {/* <img src={homeImage} alt="transport" className={styles.homeImage} /> */}
 
