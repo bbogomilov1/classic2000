@@ -1,12 +1,10 @@
 .titleContainer {
   font-family: Verdana, sans-serif;
   color: var(--primary-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: auto;
+  display: grid;
+  place-items: center;
   text-align: center;
+  gap: 1rem;
 }
 
 .title {
@@ -20,8 +18,6 @@
   width: 80%;
   margin: 0.7% 0;
   line-height: 1.5;
-  /* text-align: justify; */
-  /* text-indent: 2rem; */
   color: var(--primary-color);
   font-variant: all-small-caps;
 }
