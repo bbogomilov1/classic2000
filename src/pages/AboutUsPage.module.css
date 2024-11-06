@@ -17,6 +17,12 @@
   text-align: center;
 }
 
+.cardFrontContent {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding-bottom: 3%;
+}
+
 .cardContentList {
   text-align: left;
 }

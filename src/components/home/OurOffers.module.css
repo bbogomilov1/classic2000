@@ -55,6 +55,11 @@
   }
 }
 
+.offersTitle {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
 .offersDescription {
   text-align: left;
   padding-left: 20px;

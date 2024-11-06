@@ -8,7 +8,7 @@ const cardContent = {
   firstCardFront: <h1 className={styles.cardFrontContent}>Нашата мисия</h1>,
   firstCardBack: (
     <>
-      <h3>Нашата мисия е:</h3>
+      <h3 className={styles.cardFrontContent}>Нашата мисия е:</h3>
       <ul className={styles.cardContentList}>
         <li className={styles.cardContentListItem}>
           Успешно сътрудничество в дългосрочен план с различните видове
@@ -28,7 +28,7 @@ const cardContent = {
   secondCardFront: <h1 className={styles.cardFrontContent}>Нашата визия</h1>,
   secondCardBack: (
     <>
-      <h3>Нашата визия е:</h3>
+      <h3 className={styles.cardFrontContent}>Нашата визия е:</h3>
       <ul className={styles.cardContentList}>
         <li className={styles.cardContentListItem}>
           Постоянно да търсим нови начини и методи за оптимизация на работните

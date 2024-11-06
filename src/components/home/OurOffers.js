@@ -28,7 +28,7 @@ const OurOffers = () => {
             }}
           >
             <img src={goodsImage} alt="goods" className={styles.offersImg} />
-            <h2>Транспорт</h2>
+            <h2 className={styles.offersTitle}>Транспорт</h2>
             <div className={styles.offersDescription}>
               <p>
                 Основните дестинации от/до, които превозваме товари са: Гърция,
@@ -60,7 +60,7 @@ const OurOffers = () => {
               alt="storages"
               className={styles.offersImg}
             />
-            <h2>Складиране и ТРО</h2>
+            <h2 className={styles.offersTitle}>Складиране и ТРО</h2>
             <div className={styles.offersDescription}>
               <p>
                 Можем да предложим складова площ 1000 m² с възможност за
@@ -94,7 +94,7 @@ const OurOffers = () => {
               alt="parking"
               className={styles.offersImg}
             />
-            <h2>Охраняем паркинг за камиони</h2>
+            <h2 className={styles.offersTitle}>Охраняем паркинг за камиони</h2>
             <div className={styles.offersDescription}>
               <p>
                 Паркингът се намира в базата ни. Локацията е удобна, защото се
@@ -124,7 +124,7 @@ const OurOffers = () => {
               alt="services"
               className={styles.offersImgLong}
             />
-            <h2>Сервиз</h2>
+            <h2 className={styles.offersTitle}>Сервиз</h2>
             <div className={styles.offersDescription}>
               <p>
                 Предлагаме широк обхват от ремонтни услуги за тежкотоварни

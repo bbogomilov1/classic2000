@@ -13,7 +13,8 @@
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .description {
@@ -74,7 +75,7 @@
 
 @media (max-width: 480px) {
   .title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .description {
