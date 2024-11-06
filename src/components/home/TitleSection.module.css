@@ -1,4 +1,4 @@
-.titleContainer {
+/* .titleContainer {
   font-family: Verdana, sans-serif;
   color: var(--primary-color);
   display: flex;
@@ -30,4 +30,8 @@
   line-height: 1.5;
   color: var(--primary-color);
   font-variant: all-small-caps;
+} */
+
+.titleContainer {
+  text-align: center;
 }
