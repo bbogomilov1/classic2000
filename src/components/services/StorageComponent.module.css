@@ -30,13 +30,12 @@
 }
 
 .title {
-  font-variant: all-small-caps;
   font-size: 2.5rem;
 }
 
 .storageDescription {
   font-family: Verdana, sans-serif;
-  font-variant: all-small-caps;
+
   color: var(--primary-color);
   border-radius: 5px;
   text-align: center;
@@ -57,7 +56,7 @@
   color: var(--primary-color);
   border-radius: 5px;
   font-family: Verdana, sans-serif;
-  font-variant: all-small-caps;
+
   font-size: 1.1rem;
   font-weight: bold;
   border: 2px solid var(--primary-color);

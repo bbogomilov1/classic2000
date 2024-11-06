@@ -13,13 +13,12 @@
 }
 
 .title {
-  font-variant: all-small-caps;
   font-size: 2.5rem;
 }
 
 .description {
   font-family: Verdana, sans-serif;
-  font-variant: all-small-caps;
+
   font-size: 1.3rem;
   width: 60%;
   margin: 0.7% 0;
@@ -41,7 +40,7 @@
 .storageCol {
   padding: 5%;
   width: 25%;
-  font-variant: all-small-caps;
+
   margin: 1%;
 }
 

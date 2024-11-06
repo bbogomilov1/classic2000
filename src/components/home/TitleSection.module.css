@@ -10,9 +10,9 @@
 }
 
 .title {
-  /* font-variant: all-small-caps; */
   font-size: 2rem;
   padding-bottom: 2%;
+  text-transform: uppercase;
 }
 
 .descriptionContainer {
@@ -29,5 +29,4 @@
   margin: 1% 0%;
   line-height: 1.5;
   color: var(--primary-color);
-  /* font-variant: all-small-caps; */
 }

@@ -4,7 +4,7 @@
 
 .footerRow {
   font-family: Verdana, sans-serif;
-  font-variant: all-small-caps;
+
   color: var(--background-color);
   display: flex;
   flex-direction: row;

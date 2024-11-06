@@ -13,7 +13,6 @@
 }
 
 .title {
-  font-variant: all-small-caps;
   font-size: 2.5rem;
   padding-bottom: 3%;
 }
@@ -32,7 +31,7 @@
 .offersCol {
   padding: 1% 2%;
   width: 500px;
-  font-variant: all-small-caps;
+
   text-align: center;
   border: 2px solid var(--primary-color);
   border-radius: 15px 0px;
@@ -62,7 +61,7 @@
 
 .readMoreButton {
   font-family: Verdana, sans-serif;
-  font-variant: all-small-caps;
+
   background: none;
   border: none;
   color: var(--primary-color);
