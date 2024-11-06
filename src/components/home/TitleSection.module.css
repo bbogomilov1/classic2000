@@ -20,8 +20,8 @@
   width: 80%;
   margin: 0.7% 0;
   line-height: 1.5;
-  text-align: justify;
-  text-indent: 2rem;
+  /* text-align: justify; */
+  /* text-indent: 2rem; */
   color: var(--primary-color);
   font-variant: all-small-caps;
 }
