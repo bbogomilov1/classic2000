@@ -8,11 +8,11 @@ import FormComponent from "../components/home/FormComponent.js";
 function HomePage() {
   return (
     <div>
-      <div className={styles.homeContainer}>
-        <img src={homeImage} alt="transport" className={styles.homeImage} />
+      {/* <div className={styles.homeContainer}> */}
+      {/* <img src={homeImage} alt="transport" className={styles.homeImage} /> */}
 
-        <TitleSection />
-      </div>
+      <TitleSection />
+      {/* </div> */}
 
       <Statistics />
       <OurOffers />
