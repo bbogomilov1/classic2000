@@ -15,38 +15,38 @@ const FormComponent = () => {
           <Col sm="8">
             <Row>
               <Form.Control
-                className={styles.firstRowInput}
+                className={styles.rowInput}
                 type="text"
                 placeholder="Име на фирмата"
               />
               <Form.Control
-                className={styles.firstRowInput}
+                className={styles.rowInput}
                 type="text"
                 placeholder="Лице за контакт"
               />
             </Row>
             <Row>
               <Form.Control
-                className={styles.secondRowInput}
+                className={styles.rowInput}
                 type="email"
                 placeholder="E-mail адрес"
               />
               <Form.Control
-                className={styles.secondRowInput}
+                className={styles.rowInput}
                 type="tel"
                 placeholder="Телефонен номер"
               />
             </Row>
             <Row>
               <Form.Control
-                className={styles.thirdRowInput}
+                className={styles.rowInput}
                 type="text"
                 placeholder="Тема за запитване"
               />
             </Row>
             <Row>
               <Form.Control
-                className={styles.fourthRowInput}
+                className={styles.rowInput}
                 as="textarea"
                 rows={3}
                 placeholder="Описание на запитването"

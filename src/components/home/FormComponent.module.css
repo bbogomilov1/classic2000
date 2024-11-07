@@ -24,7 +24,7 @@
   background-color: white;
   padding: 20px;
   border-bottom: 2px solid black;
-  border-radius: 12px;
+  border-radius: 15px 0px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
 }
 
@@ -42,47 +42,27 @@
   padding: 0px 20px;
 }
 
-.firstRowInput {
-  background-color: #ecf1fb;
-}
-
-.secondRowInput {
-  background-color: #d3e2ff;
-}
-
-.thirdRowInput {
-  background-color: #b8d0fe;
+.rowInput {
+  background-color: #bfd1f6;
   width: -webkit-fill-available;
 }
 
-.fourthRowInput {
-  background-color: #9db5fd;
-  width: -webkit-fill-available;
-}
-
-.firstRowInput,
-.secondRowInput,
-.thirdRowInput,
-.fourthRowInput {
+.rowInput {
   font-size: 1rem;
   border: none;
   border-bottom: 1px solid black;
   padding: 12px 15px;
   margin: 5px;
-  border-radius: 8px;
+  border-radius: 8px 0px;
   color: var(--primary-color);
   transition: border-color 0.3s ease;
   &::placeholder {
     font-family: Verdana, sans-serif;
-
     color: var(--primary-color);
   }
 }
 
-.firstRowInput:focus,
-.secondRowInput:focus,
-.thirdRowInput:focus,
-.fourthRowInput:focus {
+.rowInput:focus {
   border-color: none;
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
   outline: none;
@@ -93,14 +73,13 @@
   background-color: var(--primary-color);
   border: none;
   border-bottom: 1px solid black;
-  border-radius: 8px;
+  border-radius: 8px 0px;
   cursor: pointer;
   padding: 12px 25px;
   margin-top: 5px;
   font-size: 16px;
   color: white;
   font-family: Verdana, sans-serif;
-
   font-weight: bold;
   width: auto;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -134,10 +113,7 @@
     margin-bottom: 20px;
   }
 
-  .firstRowInput,
-  .secondRowInput,
-  .thirdRowInput,
-  .fourthRowInput {
+  .rowInput {
     width: 300px;
     font-size: 0.9rem;
     margin: 10px 0;

@@ -36,18 +36,17 @@
   border: 2px solid var(--primary-color);
   border-radius: 15px 0px;
   margin: 1%;
-  box-shadow: 3px 3px 5px 0px var(--primary-color);
+  border-bottom: 3px solid black;
   &:hover {
     background-color: aliceblue;
-    box-shadow: 3px 3px 5px 0px var(--secondary-color);
   }
 }
 
 .offersImg,
 .offersImgLong {
   height: 250px;
-  padding-top: 20px;
-  border-radius: 15px 0px;
+  margin-top: 20px;
+  border-radius: 13px 0px;
   filter: grayscale(100%);
   transition: filter 0.3s ease;
   &:hover {
