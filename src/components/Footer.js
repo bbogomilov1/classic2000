@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "./Footer.module.css";
 import logo from "../static/logo.png";
-import fulllogo from "../static/logo.jpg";
+import fulllogo from "../static/textlogo.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faXTwitter } from "@fortawesome/free-brands-svg-icons";
@@ -32,7 +32,6 @@ const Footer = () => {
               />
               <a href="/about-us">За Класик 2000 ООД</a>
               <a href="/services">Транспортни услуги</a>
-              <a href="/autopark">Автопарк</a>
             </div>
           </Col>
 
