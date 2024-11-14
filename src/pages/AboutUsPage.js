@@ -1,4 +1,5 @@
 import AboutUsCompoent from "../components/about-us/AboutUsComponent";
+import { Helmet } from "react-helmet";
 import styles from "./AboutUsPage.module.css";
 import aboutImage from "../static/about-us.png";
 import transportImage from "../static/our-services.png";
@@ -52,8 +53,29 @@ const cardContent = {
 function AboutUsPage() {
   return (
     <div>
-      <img src={transportImage} alt="transport" className={styles.aboutImage} />
-      <img src={aboutImage} alt="transport" className={styles.aboutImage} />
+      <Helmet>
+        <title>Класик 2000 - За нас</title>
+        <meta
+          name="description"
+          content="Научете повече за Класик 2000 - нашата мисия, визия и ангажименти към качествени транспортни услуги и регионалната общност."
+        />
+        <meta
+          name="keywords"
+          content="транспорт, логистика, визия, мисия, Класик 2000, България"
+        />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+
+      <img
+        src={transportImage}
+        alt="Транспортни услуги в България"
+        className={styles.aboutImage}
+      />
+      <img
+        src={aboutImage}
+        alt="Нашето визионерско виждане за транспорт"
+        className={styles.aboutImage}
+      />
 
       <AboutUsCompoent />
       <div className={styles.goalsContainer}>

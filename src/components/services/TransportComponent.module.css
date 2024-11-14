@@ -34,8 +34,13 @@
   padding-bottom: 2%;
 }
 
+.subtitle {
+  font-size: 1.5em;
+  margin-bottom: 0px;
+}
+
 .description {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   width: 80%;
   margin: 0 3%;
   line-height: 1.5;
@@ -58,6 +63,10 @@
     font-size: 1.5rem;
   }
 
+  .subtitle {
+    margin-bottom: 10px;
+  }
+
   .description {
     font-size: 1rem;
     width: 100%;
@@ -74,129 +83,12 @@
     font-size: 1.5rem;
   }
 
+  .subtitle {
+    margin-bottom: 10px;
+  }
+
   .description {
     font-size: 0.9rem;
     text-indent: 0.5rem;
   }
 }
-
-/* .container {
-  font-family: Verdana, sans-serif;
-  color: var(--primary-color);
-  background-color: #d3e2ff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 3%;
-  width: auto;
-  text-align: center;
-  padding-bottom: 5%;
-}
-
-.title {
-  
-  font-size: 2.5rem;
-}
-
-.description {
-  font-family: Verdana, sans-serif;
-  
-  font-size: 1.3rem;
-  width: 60%;
-  margin: 0.7% 0;
-  padding-bottom: 3%;
-  line-height: 1.5;
-  text-align: center;
-  text-indent: 2rem;
-  color: var(--primary-color);
-}
-
-.servicesContainer {
-  width: 100%;
-}
-
-.servicesRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: nowrap;
-}
-
-.servicesCol {
-  padding: 2%;
-  width: 35%;
-  
-  margin: 1%;
-  background-color: var(--background-color);
-  border: 1px solid var(--primary-color);
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px 0px var(--primary-color);
-}
-
-.servicesIcon {
-  width: 3em;
-  height: 3em;
-  color: var(--background-color);
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  padding: 20px;
-}
-
-.servicesDescription {
-  text-align: left;
-  padding-left: 20px;
-}
-
-.servicesDescriptionList {
-  text-align: left;
-  padding-left: 40px;
-}
-
-@media (max-width: 768px) {
-  .servicesRow {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .servicesCol {
-    width: 100%;
-    margin: 10px 0;
-    padding: 20px;
-  }
-
-  .title {
-    font-size: 2rem;
-  }
-
-  .description {
-    width: 90%;
-  }
-
-  .servicesIcon {
-    width: 2.5em;
-    height: 2.5em;
-    padding: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .title {
-    font-size: 1.8rem;
-  }
-
-  .servicesCol {
-    padding: 20px;
-  }
-
-  .servicesRow {
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-  }
-
-  .description {
-    font-size: 1.1rem;
-  }
-} */

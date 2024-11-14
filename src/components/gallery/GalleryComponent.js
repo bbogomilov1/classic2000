@@ -2,23 +2,24 @@ import { useState, useEffect } from "react";
 import styles from "./GalleryComponent.module.css";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import client from "../../contentfulClient"; // Import your Contentful client
+import client from "../../contentfulClient";
+import { Helmet } from "react-helmet";
 
 const GalleryComponent = () => {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
-  const [photos, setPhotos] = useState([]); // State for photos from Contentful
+  const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
     const fetchPhotos = async () => {
       try {
         const response = await client.getEntries({
-          content_type: "gallery", // Use your content type ID here
+          content_type: "gallery",
         });
 
-        // Extract image URLs from Contentful entries
         const images = response.items.map((item) => ({
-          src: item.fields.image.fields.file.url, // Get URL of the image
+          src: item.fields.image.fields.file.url,
+          alt: item.fields.image.fields.title || `Gallery image ${item.sys.id}`,
         }));
 
         setPhotos(images);
@@ -37,6 +38,21 @@ const GalleryComponent = () => {
 
   return (
     <div className={styles.container}>
+      <Helmet>
+        <title>Галерия - Класик2000</title>
+        <meta
+          name="description"
+          content="Разгледайте галерията на Класик2000, включваща нашия централния офис, сервизни помещения, ТИР паркинг и складови площи в град Видин."
+        />
+        <meta
+          name="keywords"
+          content="Класик2000, галерия, сервиз Видин, ТИР паркинг, складови помещения, Видин"
+        />
+        {photos.length > 0 && (
+          <meta property="og:image" content={photos[0].src} />
+        )}
+      </Helmet>
+
       <h1 className={styles.title}>Галерия</h1>
       <p className={styles.description}>
         Централен офис на Класик2000 в град Видин, България. <br /> Сервизни
@@ -50,7 +66,7 @@ const GalleryComponent = () => {
             className={styles.galleryItem}
             onClick={() => handleImageClick(idx)}
           >
-            <img src={photo.src} alt={`Photo ${idx}`} />
+            <img src={photo.src} alt={photo.alt} loading="lazy" />
           </div>
         ))}
 

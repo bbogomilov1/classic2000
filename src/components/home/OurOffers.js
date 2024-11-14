@@ -1,4 +1,5 @@
 import styles from "./OurOffers.module.css";
+import { Helmet } from "react-helmet";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
 import goodsImage from "../../static/IMG_0472.jpg";
@@ -13,21 +14,25 @@ const OurOffers = () => {
 
   return (
     <div className={styles.container}>
+      <Helmet>
+        <title>
+          Какво Ви Предлагаме | Класик 2000 ООД - Транспорт и Логистика
+        </title>
+        <meta
+          name="description"
+          content="Класик 2000 ООД предлага транспортни услуги, складиране, охраняем паркинг и сервиз за тежкотоварни автомобили. Доверете се на нашия дългогодишен опит в транспортната индустрия."
+        />
+      </Helmet>
+
       <h1 className={styles.title}>Какво ви предлагаме</h1>
       <Container className={styles.offersContainer}>
         <Row className={styles.offersRow}>
-          <Col
-            className={styles.offersCol}
-            onClick={() => {
-              if (!isServicesPage) {
-                const element = document.getElementById("transport");
-                if (element) {
-                  element.scrollIntoView({ behavior: "smooth" });
-                }
-              }
-            }}
-          >
-            <img src={goodsImage} alt="goods" className={styles.offersImg} />
+          <Col className={styles.offersCol}>
+            <img
+              src={goodsImage}
+              alt="Транспортни услуги - превоз на товари"
+              className={styles.offersImg}
+            />
             <h2 className={styles.offersTitle}>Транспорт</h2>
             <div className={styles.offersDescription}>
               <p>
@@ -38,26 +43,17 @@ const OurOffers = () => {
               </p>
               <button
                 className={styles.readMoreButton}
+                aria-label="Прочетете повече за транспортните услуги"
                 onClick={() => navigate("/services")}
               >
                 Прочетете повече
               </button>
             </div>
           </Col>
-          <Col
-            className={styles.offersCol}
-            onClick={() => {
-              if (!isServicesPage) {
-                const element = document.getElementById("storage");
-                if (element) {
-                  element.scrollIntoView({ behavior: "smooth" });
-                }
-              }
-            }}
-          >
+          <Col className={styles.offersCol}>
             <img
               src={storagesImage}
-              alt="storages"
+              alt="Складиране и товаро-разтоварни операции"
               className={styles.offersImg}
             />
             <h2 className={styles.offersTitle}>Складиране и ТРО</h2>
@@ -69,6 +65,7 @@ const OurOffers = () => {
               </p>
               <button
                 className={styles.readMoreButton}
+                aria-label="Прочетете повече за услугите по складиране"
                 onClick={() => navigate("/services")}
               >
                 Прочетете повече
@@ -78,20 +75,10 @@ const OurOffers = () => {
         </Row>
 
         <Row className={styles.offersRow}>
-          <Col
-            className={styles.offersCol}
-            onClick={() => {
-              if (!isServicesPage) {
-                const element = document.getElementById("parking");
-                if (element) {
-                  element.scrollIntoView({ behavior: "smooth" });
-                }
-              }
-            }}
-          >
+          <Col className={styles.offersCol}>
             <img
               src={parkingImage}
-              alt="parking"
+              alt="Охраняем паркинг за камиони"
               className={styles.offersImg}
             />
             <h2 className={styles.offersTitle}>Охраняем паркинг за камиони</h2>
@@ -102,26 +89,17 @@ const OurOffers = () => {
               </p>
               <button
                 className={styles.readMoreButton}
+                aria-label="Прочетете повече за охраняемия паркинг"
                 onClick={() => navigate("/services")}
               >
                 Прочетете повече
               </button>
             </div>
           </Col>
-          <Col
-            className={styles.offersCol}
-            onClick={() => {
-              if (!isServicesPage) {
-                const element = document.getElementById("services");
-                if (element) {
-                  element.scrollIntoView({ behavior: "smooth" });
-                }
-              }
-            }}
-          >
+          <Col className={styles.offersCol}>
             <img
               src={servicesImage}
-              alt="services"
+              alt="Сервиз за тежкотоварни автомобили"
               className={styles.offersImgLong}
             />
             <h2 className={styles.offersTitle}>Сервиз</h2>
@@ -132,6 +110,7 @@ const OurOffers = () => {
               </p>
               <button
                 className={styles.readMoreButton}
+                aria-label="Прочетете повече за сервизните услуги"
                 onClick={() => navigate("/services")}
               >
                 Прочетете повече

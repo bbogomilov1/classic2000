@@ -1,17 +1,38 @@
+import { Helmet } from "react-helmet";
 import styles from "./TransportComponent.module.css";
 import transportImage from "../../static/IMG_0472.jpg";
 
 const TransportComponent = () => {
   return (
     <div className={styles.container}>
+      <Helmet>
+        <title>Транспортни услуги | Класик 2000</title>
+        <meta
+          name="description"
+          content="Класик 2000 предлага транспортни услуги за товари от/до Гърция, България, Германия и много други европейски страни. Специализирани в превоза на дрехи на закачалки и цели товари."
+        />
+        <meta
+          name="keywords"
+          content="транспортни услуги, превози на товари, FTL, LTL, превоз на дрехи на закачалки, Класик 2000, международен транспорт"
+        />
+        <meta property="og:title" content="Транспортни услуги | Класик 2000" />
+        <meta
+          property="og:description"
+          content="Класик 2000 предлага транспортни услуги за товари от/до Гърция, България, Германия и много други европейски страни. Специализирани в превоза на дрехи на закачалки и цели товари."
+        />
+        <meta property="og:image" content="../../static/IMG_0472.jpg" />
+      </Helmet>
+
       <h1 className={styles.title}>Транспортни услуги</h1>
-      <div className={styles.titleContainer}>
+      <section className={styles.titleContainer}>
         <img
           src={transportImage}
-          alt="transport"
+          alt="Транспортни услуги на Класик 2000"
           className={styles.transportImage}
         />
-        <div className={styles.description}>
+
+        <article className={styles.description}>
+          <h2 className={styles.subtitle}>Основни дестинации</h2>
           <p>
             Основните дестинации от/до, които превозваме товари са: Гърция,
             България, Германия, Нидерландия, Белгия, Люксембург, Франция, Дания,
@@ -19,130 +40,29 @@ const TransportComponent = () => {
             запитване имаме възможност за превози и от/за други релации на
             територията на Европейския съюз.
           </p>
+
+          <h2 className={styles.subtitle}>Превози и типове товари</h2>
           <p>
             Извършваме превози основно на цели товари (FTL), но при възможност
             предлагаме и групажни превози (LTL).
           </p>
+
+          <h2 className={styles.subtitle}>Специализация в превоза на дрехи</h2>
           <p>
             Специализирани сме в превоза на дрехи на закачалки в специални
             ремаркета фургони. С този тип превози стартира и нашата дейност.
           </p>
+
+          <h2 className={styles.subtitle}>Нашият автопарк</h2>
           <p>
             За целите на дейността, Класик 2000 разполага със съвременен
             автопарк от около 50 товарни автомобила, състоящ се от влекачи с
             полуремаркета.
           </p>
-        </div>
-      </div>
+        </article>
+      </section>
     </div>
   );
 };
 
 export default TransportComponent;
-
-// import styles from "./TransportComponent.module.css";
-// import { Col, Container, Row } from "react-bootstrap";
-
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faHouse,
-//   faEarthAmericas,
-//   faTruckFast,
-//   faCubes,
-//   faCommentDots,
-// } from "@fortawesome/free-solid-svg-icons";
-
-// const TransportComponent = () => {
-//   return (
-//     <div className={styles.container} id="transport">
-//       <h1 className={styles.title}>Транспортни услуги</h1>
-//       <p className={styles.description}>
-//         Прилагаме индивидуален подход към всеки свой клиент с цел да бъде
-//         осигурена максимална гъвкавост по време на работния процес.
-//       </p>
-
-//       <Container className={styles.servicesContainer}>
-//         <Row className={styles.servicesRow}>
-//           <Col className={styles.servicesCol}>
-//             <FontAwesomeIcon icon={faHouse} className={styles.servicesIcon} />
-//             <h2>Вътрешен транспорт в България</h2>
-//             <div className={styles.servicesDescription}>
-//               <p>
-//                 Няма място в България до което не можем стигнем с нашите модерни
-//                 влекачи, да вземем Вашия товар и да го превозим безопасно до
-//                 точка в страната посочена от Вас. Превозваме до всеки град,
-//                 село, индустриална зона или друго място.
-//               </p>
-//               <p>
-//                 Без проблеми ще превозим товара ви, ще ви дадем професионални
-//                 съвети за особеностите при планиране и транспортиране на Вашите
-//                 товари.
-//               </p>
-//             </div>
-//           </Col>
-//           <Col className={styles.servicesCol}>
-//             <FontAwesomeIcon
-//               icon={faEarthAmericas}
-//               className={styles.servicesIcon}
-//             />
-//             <h2>Международен транспорт</h2>
-//             <div className={styles.servicesDescription}>
-//               <p>
-//                 Основните дестинации от/до, които превозваме товари са: Гърция,
-//                 България, Германия, Нидерландия, Белгия, Люксембург, Франция,
-//                 Дания, Норвегия, Швеция, Финландия, Литва, Латвия, Естония,
-//                 Полша, Чехия. При запитване имаме възможност за превози и от/за
-//                 други релации на територията на Европейския съюз.
-//               </p>
-//             </div>
-//           </Col>
-//         </Row>
-//         <Row className={styles.servicesRow}>
-//           <Col className={styles.servicesCol}>
-//             <FontAwesomeIcon
-//               icon={faTruckFast}
-//               className={styles.servicesIcon}
-//             />
-//             <h2>Видовете сухопътен транспорт, които предлагаме</h2>
-//             <ul className={styles.servicesDescriptionList}>
-//               <li>на комплектни (цели) товари (FTL);</li>
-//               <li>на групажни пратки (LTL).</li>
-//             </ul>
-//           </Col>
-//           <Col className={styles.servicesCol}>
-//             <FontAwesomeIcon icon={faCubes} className={styles.servicesIcon} />
-//             <h2>Специализирани товари</h2>
-//             <ul className={styles.servicesDescriptionList}>
-//               <li>Дрехи на закачалки;</li>
-//               <li>
-//                 Стока от общ характер за бордови полуремаркета и фургони (тип
-//                 дрехарка);
-//               </li>
-//               <li>Товари с различен обем;</li>
-//               <li>Хранителни стоки, но не под температурен режим.</li>
-//             </ul>
-//           </Col>
-//         </Row>
-//         <Row className={styles.servicesRow}>
-//           <Col className={styles.servicesCol}>
-//             <FontAwesomeIcon
-//               icon={faCommentDots}
-//               className={styles.servicesIcon}
-//             />
-//             <h2>И още...</h2>
-//             <ul className={styles.servicesDescriptionList}>
-//               <li>Логистични решения;</li>
-//               <li>Експресни доставки с двама шофьори;</li>
-//               <li>
-//                 Професионални съвети за особеностите при транспортиране на
-//                 Вашите товари.
-//               </li>
-//             </ul>
-//           </Col>
-//         </Row>
-//       </Container>
-//     </div>
-//   );
-// };
-
-// export default TransportComponent;

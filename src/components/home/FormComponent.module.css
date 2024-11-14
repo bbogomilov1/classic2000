@@ -37,6 +37,18 @@
   justify-content: space-evenly;
 }
 
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .formImg {
   height: 100px;
   padding: 0px 20px;
@@ -51,14 +63,14 @@
   font-size: 1rem;
   border: none;
   border-bottom: 1px solid black;
-  padding: 12px 15px;
+  padding: 12px 100px 12px 15px;
   margin: 5px;
   border-radius: 8px 0px;
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
   transition: border-color 0.3s ease;
   &::placeholder {
     font-family: Verdana, sans-serif;
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
   }
 }
 
@@ -116,6 +128,7 @@
   .rowInput {
     width: 300px;
     font-size: 0.9rem;
+    padding: 10px;
     margin: 10px 0;
   }
 }

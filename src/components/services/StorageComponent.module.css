@@ -34,6 +34,12 @@
   text-transform: uppercase;
 }
 
+.storageDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .storageDescription {
   font-family: Verdana, sans-serif;
   color: var(--primary-color);

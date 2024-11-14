@@ -11,8 +11,12 @@
 
 .title {
   font-size: 2rem;
-  padding-bottom: 2%;
+  padding-bottom: -\0px;
   text-transform: uppercase;
+}
+
+.subtitle {
+  margin-bottom: 0px;
 }
 
 .descriptionContainer {
@@ -24,9 +28,15 @@
 }
 
 .description {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   width: 80%;
   margin: 1% 0%;
   line-height: 1.5;
   color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .subtitle {
+    margin-bottom: 10px;
+  }
 }

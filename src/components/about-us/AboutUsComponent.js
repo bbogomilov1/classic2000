@@ -1,4 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 import styles from "./AboutUsComponent.module.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,6 +12,19 @@ import {
 const AboutUsCompoent = () => {
   return (
     <div className={styles.aboutUscontainer}>
+      <Helmet>
+        <title>Класик 2000 - За нас</title>
+        <meta
+          name="description"
+          content="Научете повече за Класик 2000 - нашата история, локация и методи за успешни транспортни услуги."
+        />
+        <meta
+          name="keywords"
+          content="Класик 2000, транспорт, логистика, история, визия, България"
+        />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+
       <h1 className={styles.aboutUstitle}>За нас</h1>
       <Container className={styles.aboutUsContainer}>
         <Row className={styles.aboutUsRow}>
@@ -18,6 +32,7 @@ const AboutUsCompoent = () => {
             <FontAwesomeIcon
               icon={faCalendarAlt}
               className={styles.aboutUsIcon}
+              aria-hidden="true"
             />
             <h2>Кога?</h2>
             <p className={styles.aboutUsDescription}>
@@ -34,6 +49,7 @@ const AboutUsCompoent = () => {
             <FontAwesomeIcon
               icon={faLocationDot}
               className={styles.aboutUsIcon}
+              aria-hidden="true"
             />
             <h2>Къде?</h2>
             <p className={styles.aboutUsDescription}>
@@ -49,6 +65,7 @@ const AboutUsCompoent = () => {
             <FontAwesomeIcon
               icon={faMagnifyingGlassChart}
               className={styles.aboutUsIcon}
+              aria-hidden="true"
             />
             <h2>Как?</h2>
             <p className={styles.aboutUsDescription}>
