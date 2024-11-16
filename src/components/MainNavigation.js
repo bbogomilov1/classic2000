@@ -44,7 +44,6 @@ const MainNavigation = () => {
           className={`${styles.navbarListContainer} ${
             isMenuOpen ? styles.showMenu : ""
           }`}
-          aria-expanded={isMenuOpen}
         >
           {navItems.map((item) => (
             <li key={item.path}>
