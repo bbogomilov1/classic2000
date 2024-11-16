@@ -1,17 +1,8 @@
 import styles from "./TitleSection.module.css";
-import { Helmet } from "react-helmet";
 
 const TitleSection = () => {
   return (
     <div className={styles.titleContainer}>
-      <Helmet>
-        <title>Кои сме ние? | Класик 2000 ООД - Международен Транспорт</title>
-        <meta
-          name="description"
-          content="Класик 2000 ООД предлага висококачествени транспортни услуги вече 20 години, свързвайки бизнеса Ви с европейския пазар."
-        />
-      </Helmet>
-
       <h1 className={styles.title}>Кои сме ние?</h1>
       <div className={styles.descriptionContainer}>
         <p className={styles.description}>

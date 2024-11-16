@@ -54,16 +54,17 @@ function AboutUsPage() {
   return (
     <div>
       <Helmet>
-        <title>Класик 2000 - За нас</title>
+        <title>Класик 2000 - За нас, Нашите Мисия и Визия</title>
         <meta
           name="description"
           content="Научете повече за Класик 2000 - нашата мисия, визия и ангажименти към качествени транспортни услуги и регионалната общност."
         />
         <meta
           name="keywords"
-          content="транспорт, логистика, визия, мисия, Класик 2000, България"
+          content="транспорт, логистика, визия, мисия, Класик 2000, Видин, България, регионални услуги, международен транспорт, качествени услуги"
         />
         <meta name="robots" content="index, follow" />
+        {/* <link rel="canonical" href="http://localhost:3000/about-us" /> */}
       </Helmet>
 
       <img

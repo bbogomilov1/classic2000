@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import { Col, Row } from "react-bootstrap";
 import MapComponent from "../MapComponent";
 import styles from "./ParkingComponent.module.css";
@@ -9,26 +8,6 @@ import { faShieldHalved, faTreeCity } from "@fortawesome/free-solid-svg-icons";
 const ParkingComponent = () => {
   return (
     <div className={styles.container} id="parking">
-      <Helmet>
-        <title>Охраняем ТИР паркинг във Видин | Класик 2000</title>
-        <meta
-          name="description"
-          content="Охраняем ТИР паркинг във Видин с 24-часова жива охрана и видео наблюдение. На удобна локация близо до Дунав Мост 2 и важни обекти в града."
-        />
-        <meta
-          name="keywords"
-          content="ТИР паркинг Видин, охраняем паркинг Видин, паркинг за камиони Видин, паркинг Дунав Мост 2, паркинг с видео наблюдение, безплатен Wi-Fi"
-        />
-        <meta
-          property="og:title"
-          content="Охраняем ТИР паркинг във Видин | Класик 2000"
-        />
-        <meta
-          property="og:description"
-          content="Охраняем ТИР паркинг във Видин с 24-часова жива охрана и видео наблюдение. На удобна локация близо до Дунав Мост 2 и важни обекти в града."
-        />
-      </Helmet>
-
       <h1 className={styles.title}>Охраняем ТИР паркинг във Видин</h1>
 
       <p className={styles.description}>

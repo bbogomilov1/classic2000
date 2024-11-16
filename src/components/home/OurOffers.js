@@ -1,5 +1,4 @@
 import styles from "./OurOffers.module.css";
-import { Helmet } from "react-helmet";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
 import goodsImage from "../../static/IMG_0472.jpg";
@@ -14,16 +13,6 @@ const OurOffers = () => {
 
   return (
     <div className={styles.container}>
-      <Helmet>
-        <title>
-          Какво Ви Предлагаме | Класик 2000 ООД - Транспорт и Логистика
-        </title>
-        <meta
-          name="description"
-          content="Класик 2000 ООД предлага транспортни услуги, складиране, охраняем паркинг и сервиз за тежкотоварни автомобили. Доверете се на нашия дългогодишен опит в транспортната индустрия."
-        />
-      </Helmet>
-
       <h1 className={styles.title}>Какво ви предлагаме</h1>
       <Container className={styles.offersContainer}>
         <Row className={styles.offersRow}>

@@ -1,34 +1,9 @@
-import { Helmet } from "react-helmet";
 import styles from "./ServiceComponent.module.css";
 import servicesImage from "../../static/services.png";
 
 const ServiceComponent = () => {
   return (
     <div className={styles.container} id="services">
-      <Helmet>
-        <title>Сервизни услуги за камиони | Класик 2000</title>
-        <meta
-          name="description"
-          content="Класик 2000 предлага широк обхват от сервизни услуги за тежкотоварни автомобили, включително диагностика, ремонти, заваръчни дейности, и мобилен сервиз за аварирали камиони."
-        />
-        <meta
-          name="keywords"
-          content="сервизни услуги, сервиз за камиони, диагностика на камиони, ремонт на товарни автомобили, мобилен сервиз, заваръчни дейности"
-        />
-        <meta
-          property="og:title"
-          content="Сервизни услуги за камиони | Класик 2000"
-        />
-        <meta
-          property="og:description"
-          content="Класик 2000 предлага широк обхват от сервизни услуги за тежкотоварни автомобили, включително диагностика, ремонти, заваръчни дейности, и мобилен сервиз за аварирали камиони."
-        />
-        <meta
-          property="og:image"
-          content="../../static/services.png" // Add the path to an image for social sharing
-        />
-      </Helmet>
-
       <h1 className={styles.title}>Сервизни услуги</h1>
 
       <section className={styles.titleContainer}>

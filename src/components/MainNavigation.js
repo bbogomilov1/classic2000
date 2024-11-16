@@ -8,7 +8,6 @@ const navItems = [
   { path: "/", label: "Начало" },
   { path: "/about-us", label: "За нас" },
   { path: "/services", label: "Услуги" },
-  // { path: "/autopark", label: "Автопарк" },
   { path: "/gallery", label: "Галерия" },
   { path: "/contacts", label: "Контакти" },
 ];
@@ -37,7 +36,7 @@ const MainNavigation = () => {
           width="80"
           height="80"
           className={`${styles.logo} ${isMenuOpen ? styles.rotated : ""}`}
-          alt="React Bootstrap logo"
+          alt="Класик2000 - Начална страница"
           onClick={handleLogoClick}
         />
 
@@ -45,6 +44,7 @@ const MainNavigation = () => {
           className={`${styles.navbarListContainer} ${
             isMenuOpen ? styles.showMenu : ""
           }`}
+          aria-expanded={isMenuOpen}
         >
           {navItems.map((item) => (
             <li key={item.path}>
@@ -56,6 +56,7 @@ const MainNavigation = () => {
                     : styles.navLink
                 }
                 end
+                aria-current={({ isActive }) => (isActive ? "page" : undefined)}
               >
                 {item.label}
               </NavLink>

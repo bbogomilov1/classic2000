@@ -3,7 +3,6 @@ import styles from "./GalleryComponent.module.css";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import client from "../../contentfulClient";
-import { Helmet } from "react-helmet";
 
 const GalleryComponent = () => {
   const [open, setOpen] = useState(false);
@@ -38,21 +37,6 @@ const GalleryComponent = () => {
 
   return (
     <div className={styles.container}>
-      <Helmet>
-        <title>Галерия - Класик2000</title>
-        <meta
-          name="description"
-          content="Разгледайте галерията на Класик2000, включваща нашия централния офис, сервизни помещения, ТИР паркинг и складови площи в град Видин."
-        />
-        <meta
-          name="keywords"
-          content="Класик2000, галерия, сервиз Видин, ТИР паркинг, складови помещения, Видин"
-        />
-        {photos.length > 0 && (
-          <meta property="og:image" content={photos[0].src} />
-        )}
-      </Helmet>
-
       <h1 className={styles.title}>Галерия</h1>
       <p className={styles.description}>
         Централен офис на Класик2000 в град Видин, България. <br /> Сервизни

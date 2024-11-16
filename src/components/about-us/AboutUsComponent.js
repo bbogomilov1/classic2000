@@ -1,5 +1,4 @@
 import { Col, Container, Row } from "react-bootstrap";
-import { Helmet } from "react-helmet";
 import styles from "./AboutUsComponent.module.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,19 +11,6 @@ import {
 const AboutUsCompoent = () => {
   return (
     <div className={styles.aboutUscontainer}>
-      <Helmet>
-        <title>Класик 2000 - За нас</title>
-        <meta
-          name="description"
-          content="Научете повече за Класик 2000 - нашата история, локация и методи за успешни транспортни услуги."
-        />
-        <meta
-          name="keywords"
-          content="Класик 2000, транспорт, логистика, история, визия, България"
-        />
-        <meta name="robots" content="index, follow" />
-      </Helmet>
-
       <h1 className={styles.aboutUstitle}>За нас</h1>
       <Container className={styles.aboutUsContainer}>
         <Row className={styles.aboutUsRow}>

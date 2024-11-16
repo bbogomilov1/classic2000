@@ -17,9 +17,10 @@ function HomePage() {
         />
         <meta
           name="keywords"
-          content="транспорт, складови решения, охраняеми паркинги, логистика, Видин, България"
+          content="транспортни услуги, складови решения, охраняем паркинг, логистика, международен транспорт, Класик 2000, Видин, България, логистични услуги, складово пространство"
         />
         <meta name="robots" content="index, follow" />
+        {/* <link rel="canonical" href="http://localhost:3000/" /> */}
       </Helmet>
 
       <div className={styles.homeContainer}>

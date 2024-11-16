@@ -1,28 +1,9 @@
-import { Helmet } from "react-helmet";
 import styles from "./TransportComponent.module.css";
 import transportImage from "../../static/IMG_0472.jpg";
 
 const TransportComponent = () => {
   return (
     <div className={styles.container}>
-      <Helmet>
-        <title>Транспортни услуги | Класик 2000</title>
-        <meta
-          name="description"
-          content="Класик 2000 предлага транспортни услуги за товари от/до Гърция, България, Германия и много други европейски страни. Специализирани в превоза на дрехи на закачалки и цели товари."
-        />
-        <meta
-          name="keywords"
-          content="транспортни услуги, превози на товари, FTL, LTL, превоз на дрехи на закачалки, Класик 2000, международен транспорт"
-        />
-        <meta property="og:title" content="Транспортни услуги | Класик 2000" />
-        <meta
-          property="og:description"
-          content="Класик 2000 предлага транспортни услуги за товари от/до Гърция, България, Германия и много други европейски страни. Специализирани в превоза на дрехи на закачалки и цели товари."
-        />
-        <meta property="og:image" content="../../static/IMG_0472.jpg" />
-      </Helmet>
-
       <h1 className={styles.title}>Транспортни услуги</h1>
       <section className={styles.titleContainer}>
         <img

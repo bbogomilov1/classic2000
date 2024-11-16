@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import styles from "./Statistics.module.css";
@@ -88,14 +87,6 @@ const Statistics = () => {
 
   return (
     <div className={styles.container}>
-      <Helmet>
-        <title>Цифри и Факти | Класик 2000 ООД - Превоз и Логистика</title>
-        <meta
-          name="description"
-          content="Разгледайте нашите впечатляващи статистики и факти - доказателство за дългогодишния опит и качеството на услугите ни в транспортната индустрия."
-        />
-      </Helmet>
-
       <h1 className={styles.title}>Цифри и факти</h1>
       <Container className={styles.statisticsContainer}>
         <Row className={styles.statisticsRow}>

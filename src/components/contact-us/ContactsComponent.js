@@ -9,44 +9,6 @@ import {
 const ContactsComponent = () => {
   return (
     <div className={styles.container}>
-      <script type="application/ld+json">
-        {`
-          {
-            "@context": "http://schema.org",
-            "@type": "Organization",
-            "name": "Класик2000",
-            "contactPoint": [
-              {
-                "@type": "ContactPoint",
-                "telephone": "+35994626060",
-                "contactType": "customer service",
-                "areaServed": "BG",
-                "availableLanguage": "Bulgarian"
-              },
-              {
-                "@type": "ContactPoint",
-                "telephone": "+359899610075",
-                "contactType": "service",
-                "areaServed": "BG",
-                "availableLanguage": "Bulgarian",
-                "hoursAvailable": "Mo-Fr 09:00-17:30"
-              }
-            ],
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Южна промишлена зона (до КАТ)",
-              "addressLocality": "Видин",
-              "addressCountry": "България",
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "43.972651",
-                "longitude": "22.868933"
-              }
-            }
-          }
-        `}
-      </script>
-
       <h1 className={styles.title}>Контакти</h1>
 
       <div className={styles.contactsContainer}>

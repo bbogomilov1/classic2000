@@ -6,7 +6,6 @@ import {
   Marker,
   InfoWindow,
 } from "@react-google-maps/api";
-import { Helmet } from "react-helmet";
 
 const MapComponent = () => {
   const position = { lat: 43.972651, lng: 22.868933 };
@@ -14,18 +13,6 @@ const MapComponent = () => {
 
   return (
     <div className={styles.mapContainer}>
-      <Helmet>
-        <title>Охраняем ТИР паркинг Видин | Класик 2000 - Google Map</title>
-        <meta
-          name="description"
-          content="Охраняем ТИР паркинг в град Видин с 24-часова охрана, видео наблюдение и удобна локация близо до Дунав Мост 2."
-        />
-        <meta
-          name="keywords"
-          content="ТИР паркинг Видин, паркинг карта Видин, охраняем паркинг Видин, Google Maps паркинг"
-        />
-      </Helmet>
-
       <LoadScript googleMapsApiKey="AIzaSyC_v2yc2Zmt2fThlyYMZP1xdIZJVTIOsaA">
         <GoogleMap
           center={position}
