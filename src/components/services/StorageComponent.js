@@ -1,32 +1,28 @@
 import styles from "./StorageComponent.module.css";
+import { useTranslation } from "react-i18next";
 
 const StorageComponent = () => {
+  const { t } = useTranslation("services");
+
   return (
     <div className={styles.container} id="storage">
-      <h1 className={styles.title}>Склад и товарене & разтоварване</h1>
+      <h1 className={styles.title}>{t("storage.title")}</h1>
 
       <section className={styles.storageDescriptionContainer}>
-        <p className={styles.storageDescription}>
-          Можем да предложим складова площ 1000 m² с възможност за разделяне на
-          2 х 500 m² и товаро-разтоварни операции с мотокар до 2,5 тона.
-        </p>
+        <p className={styles.storageDescription}>{t("storage.titleDesc")}</p>
 
-        <h2>Услуги</h2>
+        <h2>{t("storage.subtitle1")}</h2>
         <ul className={styles.storageDescriptionList}>
           <li className={styles.storageDescriptionListItem}>
-            24 часова охрана
+            {t("storage.item1")}
           </li>
           <li className={styles.storageDescriptionListItem}>
-            24 часово видео наблюдение на стоката
+            {t("storage.item2")}
           </li>
         </ul>
 
-        <h2>Крос-док операции</h2>
-        <p className={styles.storageDescription}>
-          Извършваме и крос-док операции. Можем временно да складираме Ваша
-          стока и да я претоварим за доставка на друг автомобил в желано от Вас
-          време.
-        </p>
+        <h2>{t("storage.subtitle2")}</h2>
+        <p className={styles.storageDescription}>{t("storage.desc")}</p>
       </section>
     </div>
   );

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./GalleryComponent.module.css";
+import { useTranslation } from "react-i18next";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import client from "../../contentfulClient";
@@ -8,6 +9,7 @@ const GalleryComponent = () => {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
   const [photos, setPhotos] = useState([]);
+  const { t } = useTranslation("gallery");
 
   useEffect(() => {
     const fetchPhotos = async () => {
@@ -37,11 +39,11 @@ const GalleryComponent = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Галерия</h1>
-      <p className={styles.description}>
-        Централен офис на Класик2000 в град Видин, България. <br /> Сервизни
-        помещения, ТИР паркинг и складове в един комплекс.
-      </p>
+      <h1 className={styles.title}>{t("title")}</h1>
+      <div className={styles.descriptionContainer}>
+        <p className={styles.description}>{t("titleDesc1")}</p>
+        <p className={styles.description}>{t("titleDesc2")}</p>
+      </div>
 
       <div className={styles.galleryGrid}>
         {photos.map((photo, idx) => (

@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import styles from "./Statistics.module.css";
+import { useTranslation } from "react-i18next";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import client from "../../contentfulClient";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faStar,
   faTruck,
@@ -18,14 +19,21 @@ import {
   faComments,
 } from "@fortawesome/free-solid-svg-icons";
 
+const localeMapping = {
+  en: "en-US",
+  bg: "bg",
+};
+
 const Statistics = () => {
   const [statistics, setStatistics] = useState([]);
+  const { t, i18n } = useTranslation("home");
 
   useEffect(() => {
     const fetchStatistics = async () => {
       try {
         const response = await client.getEntries({
           content_type: "statistics",
+          locale: localeMapping[i18n.language],
           order: "fields.sortOrder",
         });
 
@@ -42,7 +50,7 @@ const Statistics = () => {
     };
 
     fetchStatistics();
-  }, []);
+  }, [i18n.language]);
 
   const getIcon = (iconName) => {
     switch (iconName) {
@@ -87,7 +95,7 @@ const Statistics = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Цифри и факти</h1>
+      <h1 className={styles.title}>{t("statistics.title")}</h1>
       <Container className={styles.statisticsContainer}>
         <Row className={styles.statisticsRow}>
           {statistics.map((stat, index) => (

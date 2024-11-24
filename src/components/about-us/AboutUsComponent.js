@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "./AboutUsComponent.module.css";
+import { useTranslation } from "react-i18next";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,9 +10,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const AboutUsCompoent = () => {
+  const { t } = useTranslation("aboutUs");
+
   return (
     <div className={styles.aboutUscontainer}>
-      <h1 className={styles.aboutUstitle}>За нас</h1>
+      <h1 className={styles.aboutUstitle}>{t("title")}</h1>
       <Container className={styles.aboutUsContainer}>
         <Row className={styles.aboutUsRow}>
           <Col className={styles.aboutUsCol}>
@@ -20,16 +23,8 @@ const AboutUsCompoent = () => {
               className={styles.aboutUsIcon}
               aria-hidden="true"
             />
-            <h2>Кога?</h2>
-            <p className={styles.aboutUsDescription}>
-              Класик 2000 е семейна фирма, започнала своята дейност през
-              далечната вече 2004-а година. Започнахме без опит и само с един
-              малък камион. С много труд, постоянство и коректност, печелим
-              първите си редовни клиенти. 20 години по-късно Класик 2000 е едно
-              утвърдено и познато име в българския транспортен бранш и
-              продължава своето успешно развитие, въпреки многото трудности през
-              годините.
-            </p>
+            <h2>{t("subtitle1")}</h2>
+            <p className={styles.aboutUsDescription}>{t("desc1")}</p>
           </Col>
           <Col className={styles.aboutUsCol}>
             <FontAwesomeIcon
@@ -37,15 +32,8 @@ const AboutUsCompoent = () => {
               className={styles.aboutUsIcon}
               aria-hidden="true"
             />
-            <h2>Къде?</h2>
-            <p className={styles.aboutUsDescription}>
-              Седалището ни е в град Видин, България. След много инвестиции през
-              2015-а успяхме да обединим цялата ни дейност на едно място,
-              съчетаващо офиси, складове, паркинг и сервиз. Локацията ни е на
-              входа на град Видин и предлага бърза удобна връзка с Дунав мост-2
-              и международен път Е-79. Това е от ключово значение за процеса на
-              работа при предлагането на бързи и ефикасни транспортни решения.
-            </p>
+            <h2>{t("subtitle2")}</h2>
+            <p className={styles.aboutUsDescription}>{t("desc2")}</p>
           </Col>
           <Col className={styles.aboutUsCol}>
             <FontAwesomeIcon
@@ -53,12 +41,8 @@ const AboutUsCompoent = () => {
               className={styles.aboutUsIcon}
               aria-hidden="true"
             />
-            <h2>Как?</h2>
-            <p className={styles.aboutUsDescription}>
-              С много труд, отдаденост и постоянство изградихме това, което сме
-              днес. Опитният ни екип е на Ваше разположение, за да намери
-              най-доброто транспортно решение.
-            </p>
+            <h2>{t("subtitle3")}</h2>
+            <p className={styles.aboutUsDescription}>{t("desc3")}</p>
           </Col>
         </Row>
       </Container>

@@ -1,10 +1,18 @@
 import { Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import styles from "./Footer.module.css";
 import fulllogo from "../static/textlogo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faPhoneVolume,
+  faEnvelope,
+  faLocationDot,
+} from "@fortawesome/free-solid-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
+  const { t } = useTranslation("footer");
+
   return (
     <footer className={styles.footerContainer} aria-label="Footer">
       <Container>
@@ -21,7 +29,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <a href="/about-us" title="Научете повече за Класик 2000 ООД">
-                    За Класик 2000 ООД
+                    {t("aboutUs")}
                   </a>
                 </li>
                 <li>
@@ -29,7 +37,12 @@ const Footer = () => {
                     href="/services"
                     title="Разгледайте нашите транспортни услуги"
                   >
-                    Транспортни услуги
+                    {t("services")}
+                  </a>
+                </li>
+                <li>
+                  <a href="/gdpr" title="Научете повече за Класик 2000 ООД">
+                    Политика за поверителност
                   </a>
                 </li>
               </ul>
@@ -38,9 +51,14 @@ const Footer = () => {
 
           <Col as="address" aria-label="Contact information">
             <div className={styles.footerList}>
-              <h2>Контакти</h2>
+              <h2>{t("contacts")}</h2>
               <ul>
-                <li>
+                <li style={{ paddingBottom: "0rem" }}>
+                  <FontAwesomeIcon
+                    icon={faPhoneVolume}
+                    className={styles.footerIcon}
+                    aria-hidden="true"
+                  />
                   <a
                     href="tel:+35994626060"
                     title="Позвънете на +359 94 62 60 60"
@@ -49,6 +67,12 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
+                  <FontAwesomeIcon
+                    icon={faPhoneVolume}
+                    className={styles.footerIcon}
+                    style={{ color: "var(--primary-color" }}
+                    aria-hidden="true"
+                  />
                   <a
                     href="tel:+359899610075"
                     title="Позвънете на +359 899 610 075"
@@ -57,22 +81,42 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    className={styles.footerIcon}
+                    aria-hidden="true"
+                  />
                   <a
                     href="/contacts"
                     title="Свържете се с нас чрез страницата за контакти"
                   >
-                    Пишете ни
+                    {t("request")}
                   </a>
                 </li>
-                <li>Град Видин, България</li>
-                <li>Южна промишлена зона</li>
+                <li style={{ paddingBottom: "0rem" }}>
+                  <FontAwesomeIcon
+                    icon={faLocationDot}
+                    className={styles.footerIcon}
+                    aria-hidden="true"
+                  />
+                  {t("address1")}
+                </li>
+                <li>
+                  <FontAwesomeIcon
+                    icon={faLocationDot}
+                    className={styles.footerIcon}
+                    style={{ color: "var(--primary-color" }}
+                    aria-hidden="true"
+                  />
+                  {t("address2")}
+                </li>
               </ul>
             </div>
           </Col>
 
           <Col aria-label="Social media links">
             <div className={styles.footerList}>
-              <h2>Социални мрежи</h2>
+              <h2>{t("socials")}</h2>
               <ul>
                 <li>
                   <a
@@ -85,7 +129,7 @@ const Footer = () => {
                       icon={faFacebook}
                       className={styles.footerIcon}
                     />
-                    Facebook страница
+                    {t("facebook")}
                   </a>
                 </li>
               </ul>

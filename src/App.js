@@ -7,22 +7,22 @@ import AboutUsPage from "./pages/AboutUsPage";
 import RootLayout from "./pages/RootLayout";
 import ErrorPage from "./pages/ErrorPage";
 import ServicesPage from "./pages/ServicesPage";
-// import AutoparkPage from "./pages/AutoparkPage";
 import GalleryPage from "./pages/GalleryPage";
 import ContactUsPage from "./pages/ContactUsPage";
+import GDPRComponent from "./pages/GDPR";
 
 const routeChildren = [
   <Route key="home" index="true" element={<HomePage />} />,
   <Route key="about-us" path="about-us" element={<AboutUsPage />} />,
   <Route key="services" path="services" element={<ServicesPage />} />,
-  // <Route key="autopark" path="autopark" element={<AutoparkPage />} />,
   <Route key="gallery" path="gallery" element={<GalleryPage />} />,
   <Route key="contacts" path="contacts" element={<ContactUsPage />} />,
+  <Route key="gdpr" path="gdpr" element={<GDPRComponent />} />,
 ];
 
 const routeDefinitions = createRoutesFromElements(
-  <Route errorElement={<ErrorPage />}>
-    <Route path="/" element={<RootLayout />} children={routeChildren} />
+  <Route path=":lang" element={<RootLayout />} errorElement={<ErrorPage />}>
+    {routeChildren}
   </Route>
 );
 

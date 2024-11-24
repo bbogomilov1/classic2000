@@ -1,20 +1,34 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Container, Navbar } from "react-bootstrap";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate, useLocation, useParams } from "react-router-dom";
 import logo from "../static/logo.png";
 import styles from "./MainNavigation.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 const navItems = [
-  { path: "/", label: "Начало" },
-  { path: "/about-us", label: "За нас" },
-  { path: "/services", label: "Услуги" },
-  { path: "/gallery", label: "Галерия" },
-  { path: "/contacts", label: "Контакти" },
+  { path: "", label: "home" },
+  { path: "about-us", label: "aboutUs" },
+  { path: "services", label: "services" },
+  { path: "gallery", label: "gallery" },
+  { path: "contacts", label: "contacts" },
 ];
 
 const MainNavigation = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const { lang } = useParams();
+  const { t, i18n } = useTranslation("navbar");
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleLanguageChange = (newLang) => {
+    if (newLang !== lang) {
+      const newPath = location.pathname.replace(`/${lang}`, `/${newLang}`);
+      i18n.changeLanguage(newLang);
+      navigate(newPath, { replace: true });
+    }
+  };
 
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
@@ -57,10 +71,33 @@ const MainNavigation = () => {
                 end
                 aria-current={({ isActive }) => (isActive ? "page" : undefined)}
               >
-                {item.label}
+                {t(item.label)}
               </NavLink>
             </li>
           ))}
+          <div className={styles.dropdown}>
+            <button className={styles.dropdownBtn}>
+              <FontAwesomeIcon
+                icon={faGlobe}
+                className={styles.langIcon}
+                aria-label={faGlobe}
+              />
+            </button>
+            <div className={styles.dropdownContent}>
+              <button
+                onClick={() => handleLanguageChange("bg")}
+                disabled={i18n.language === "bg"}
+              >
+                BG
+              </button>
+              <button
+                onClick={() => handleLanguageChange("en")}
+                disabled={i18n.language === "en"}
+              >
+                EN
+              </button>
+            </div>
+          </div>
         </ul>
       </Container>
     </Navbar>

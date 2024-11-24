@@ -1,8 +1,10 @@
 import { useState } from "react";
 import styles from "./OurGoals.module.css";
+import { useTranslation } from "react-i18next";
 
 const OurGoals = ({ cardFront, cardBack }) => {
   const [isFlipped, setFlipped] = useState(false);
+  const { t } = useTranslation("aboutUs");
 
   const handleFlip = () => {
     setFlipped(!isFlipped);
@@ -25,7 +27,7 @@ const OurGoals = ({ cardFront, cardBack }) => {
                 aria-expanded={isFlipped}
                 aria-controls="goalCard"
               >
-                обърни
+                {t("card")}
               </button>
             </div>
             <div className={styles.flipCardBack}>
@@ -36,7 +38,7 @@ const OurGoals = ({ cardFront, cardBack }) => {
                 aria-expanded={isFlipped}
                 aria-controls="goalCard"
               >
-                обърни
+                {t("card")}
               </button>
             </div>
           </div>

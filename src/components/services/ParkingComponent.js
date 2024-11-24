@@ -1,20 +1,19 @@
 import { Col, Row } from "react-bootstrap";
 import MapComponent from "../MapComponent";
 import styles from "./ParkingComponent.module.css";
+import { useTranslation } from "react-i18next";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShieldHalved, faTreeCity } from "@fortawesome/free-solid-svg-icons";
 
 const ParkingComponent = () => {
+  const { t } = useTranslation("services");
+
   return (
     <div className={styles.container} id="parking">
-      <h1 className={styles.title}>Охраняем ТИР паркинг във Видин</h1>
+      <h1 className={styles.title}>{t("parking.title")}</h1>
 
-      <p className={styles.description}>
-        Паркингът се намира в базата ни. Локацията е удобна, защото се намира на
-        влизане в град Видин. На около километър след отбивката за околовръстен
-        път водещ към Дунав Мост 2.
-      </p>
+      <p className={styles.description}>{t("parking.titleDesc")}</p>
 
       <MapComponent />
 
@@ -24,22 +23,22 @@ const ParkingComponent = () => {
             icon={faShieldHalved}
             className={styles.storageIcon}
           />
-          <h2>Предоставяме</h2>
+          <h2>{t("parking.subtitle1")}</h2>
           <ul className={styles.storageDescriptionList}>
-            <li>Денонощна жива охрана;</li>
-            <li>24 часово видео наблюдение;</li>
-            <li>Безплатен Wi-Fi интернет;</li>
-            <li>Кафе машина;</li>
-            <li>WC.</li>
+            <li>{t("parking.item1")}</li>
+            <li>{t("parking.item2")}</li>
+            <li>{t("parking.item3")}</li>
+            <li>{t("parking.item4")}</li>
+            <li>{t("parking.item5")}</li>
           </ul>
         </Col>
         <Col className={styles.storageCol}>
           <FontAwesomeIcon icon={faTreeCity} className={styles.storageIcon} />
-          <h2>В близост</h2>
+          <h2>{t("parking.subtitle2")}</h2>
           <ul className={styles.storageDescriptionList}>
-            <li>център град Видин;</li>
-            <li>бензиностанция SHELL;</li>
-            <li>хранителни магазини и банки.</li>
+            <li>{t("parking.item6")}</li>
+            <li>{t("parking.item7")}</li>
+            <li>{t("parking.item8")}</li>
           </ul>
         </Col>
       </Row>

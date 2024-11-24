@@ -21,6 +21,10 @@
   font-style: normal;
 }
 
+.footerList li {
+  padding-bottom: 1rem;
+}
+
 .footerList a {
   text-decoration: none;
   color: var(--background-color);
