@@ -5,12 +5,11 @@ const ProjectComponent = () => {
   const { t } = useTranslation("covidSupport");
 
   return (
-    <div className={styles.container}>
-      <div
-        dangerouslySetInnerHTML={{ __html: t("text") }}
-        aria-label="Legal Information"
-      />
-    </div>
+    <div
+      className={styles.container}
+      dangerouslySetInnerHTML={{ __html: t("text") }}
+      aria-label="Legal Information"
+    />
   );
 };
 

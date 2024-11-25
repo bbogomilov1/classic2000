@@ -4,3 +4,15 @@
   color: var(--primary-color);
   font-family: Verdana, sans-serif;
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+}
