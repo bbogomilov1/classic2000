@@ -1,7 +1,9 @@
+import styles from "./GDPR.module.css";
+
 const GDPRComponent = () => {
   return (
-    <div>
-      <h1>ПОЛИТИКА ЗА ПОВЕРИТЕЛНОСТ</h1>
+    <div className={styles.container}>
+      <h1 className={styles.title}>ПОЛИТИКА ЗА ПОВЕРИТЕЛНОСТ</h1>
 
       <div>
         <h2>ПРЕДМЕТ</h2>

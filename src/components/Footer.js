@@ -11,7 +11,10 @@ import {
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
-  const { t } = useTranslation("footer");
+  const { t, i18n } = useTranslation("footer");
+  const currentLanguage = i18n.language;
+
+  const getLocalizedUrl = (path) => `/${currentLanguage}${path}`;
 
   return (
     <footer className={styles.footerContainer} aria-label="Footer">
@@ -28,21 +31,43 @@ const Footer = () => {
               />
               <ul>
                 <li>
-                  <a href="/about-us" title="Научете повече за Класик 2000 ООД">
+                  <a
+                    href={getLocalizedUrl("/about-us")}
+                    title="Научете повече за Класик 2000 ООД"
+                  >
                     {t("aboutUs")}
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/services"
+                    href={getLocalizedUrl("/services")}
                     title="Разгледайте нашите транспортни услуги"
                   >
                     {t("services")}
                   </a>
                 </li>
                 <li>
-                  <a href="/gdpr" title="Научете повече за Класик 2000 ООД">
-                    Политика за поверителност
+                  <a
+                    href={getLocalizedUrl("/gdpr")}
+                    title="Научете повече за Политиката за поверителност"
+                  >
+                    {t("cookies")}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={getLocalizedUrl("/signals")}
+                    title="Научете повече за Подаване на сигнали по ЗЗЛПСПОИН"
+                  >
+                    {t("signals")}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={getLocalizedUrl("/project")}
+                    title="Научете повече за Подаване на сигнали по ЗЗЛПСПОИН"
+                  >
+                    {t("project")}
                   </a>
                 </li>
               </ul>

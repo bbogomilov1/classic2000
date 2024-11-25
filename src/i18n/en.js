@@ -1,3 +1,6 @@
+import europeanFund from "../static/european-fund.png";
+import europeanFund2 from "../static/european-fund2.png";
+
 export const en = {
   navbar: {
     home: "Home",
@@ -173,11 +176,105 @@ export const en = {
   footer: {
     aboutUs: "About Classic 2000 Ltd.",
     services: "Transport services",
+    cookies: "Privacy Policy",
+    signals: "Filing reports under the ЗЗЛПСПОИН",
+    project:
+      "Support for medium-sized enterprises to overcome the economic consequences of the COVID-19 pandemic",
+
     contacts: "Contacts",
     request: "Send a request",
     address1: "Vidin, Bulgaria",
     address2: "Southern Industrial zone",
+
     socials: "Social Networks",
     facebook: "Facebook",
+  },
+
+  covidSupport: {
+    text: `<h1>
+        Support for medium-sized enterprises to overcome the economic consequences of the COVID-19 pandemic
+      </h1>
+
+      <div style="text-align: center">
+        <img
+          src=${europeanFund}
+          alt="Covid Support"
+          style="width: 300px"
+        />
+        <img
+          src=${europeanFund2}
+          alt="Covid Support"
+          style="width: 300px"
+        />
+      </div>
+
+      <p>
+        Project BG16RFOP002-2.077-0406-C01 is funded by the Operational Program "Innovation and Competitiveness", co-financed by the European Union through the European Regional Development Fund.
+      </p>
+
+      <div>
+        <h2>SHORT DESCRIPTION OF THE PROJECT</h2>
+        <p>
+          The current project is fulfilled by "Classic 2000 OOD", bulgarian medium-sized enterprise with main activity "Freight road transport", NACE code 2008 49.41 "Freight road transport". This is the first project of the company and it is realized with the financial support of the European Union and the European Regional Development Fund. "Classic-2000 OOD" develops the current project proposal "Overcoming the lack of funds and liquidity, as a result of the COVID-19 epidemic" in accordance with the Procedure BG16RFOP002-2.077 "Support for medium-sized enterprises to overcome the economic consequences of the COVID-19 pandemic", under the Operational Programme "Innovation and Competitiveness" 2014-2020. The project is implemented in absolute sync with the principles of the horizontal EU policies, namely the promotion of equality between men and women and non-discrimination, as well as the promotion of sustainable development and environmental protection. The project has a total duration of 3 months in accordance with the guidelines for application in the procedure, as of the date of entry into force of the administrative contract for granting financial aid, from 03.02.2021 to 03.05.2021
+        </p>
+      </div>
+
+      <div>
+        <h2>MAIN GOAL OF THE PROJECT</h2>
+        <p>
+          The main goal of the current project proposal is to provide operating capital for the enterprise "CLASSIC-2000 OOD" for overcoming the consequences of the COVID-19 pandemic, which in turn will lead to stable economic growth, job preservation and long-term sustainable employment.
+        </p>
+      </div>
+
+      <div>
+        <h2>EXPECTED RESULTS</h2>
+        <p>
+          The expected results upon successful implementation of this project proposal are expressed in achieving a positive effect "CLASSIC-2000 OOD" to overcome the economic consequences of the pandemic COVID-19 and stability of jobs in the company. The company is expected to continue its activities for a period of at least 3 months after the completion of the project.
+        </p>
+      </div>
+
+      <div style="text-align: center">
+        <img
+          src=${europeanFund}
+          alt="Covid Support"
+          style="width: 300px"
+        />
+        <img
+          src=${europeanFund2}
+          alt="Covid Support"
+          style="width: 300px"
+        />
+      </div>
+
+      <div>
+        <p>
+          Project and main goal: BG16RFOP002-2.077-0406-C01 "Support of medium sized enterprises to overcome the economic consequences of the of the COVID-19 pandemic". Providing operational funds and achieving a positive effect towards overcoming the economic consequences of the COVID-19 pandemic and the work places stability.
+        </p>
+      </div>
+
+      <div>
+        <p>Beneficiary: CLASSIC-2000 OOD</p>
+        <p>
+          Total value: 150 000 leva of which 127 500 leva european funding and 22 500 leva national co-funding.
+        </p>
+        <p>Start: 03.02.2021</p>
+        <p>End: 03.05.2021</p>
+      </div>
+
+      <div>
+        <p>
+          Project BG16RFOP002-2.077-0406-C01 "Support for medium-sized enterprises to overcome the economic consequences of the COVID-19 pandemic" funded by the Operational Program "Innovation and Competitiveness", co-financed by the European Union through the European Regional Development Fund.
+        </p>
+      </div>
+
+      <div>
+        <p>
+          This document was created with the financial support of the Operational Program "Innovation and Competitiveness" 2014-2020, co-financed by the European Union through the European Regional Development Fund. The entire responsibility for the content of the document lies with CLASSIC-2000 OOD. and under no circumstances can it be assumed that this document reflects the official opinion of the European Union and the Managing Authority.
+        </p>
+      </div>
+
+      <div>
+        <p>Last update: 04.02.2021</p>
+      </div>`,
   },
 };
