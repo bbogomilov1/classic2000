@@ -178,8 +178,7 @@ export const en = {
     services: "Transport services",
     cookies: "Privacy Policy",
     signals: "Filing reports under the ЗЗЛПСПОИН",
-    project:
-      "Support for medium-sized enterprises to overcome the economic consequences of the COVID-19 pandemic",
+    project: "EU Fund",
 
     contacts: "Contacts",
     request: "Send a request",
