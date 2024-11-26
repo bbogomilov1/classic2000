@@ -61,10 +61,16 @@
   }
 
   .footerList {
+    flex-direction: column;
     align-items: center;
   }
 
   .footerLogo {
     margin: 0px;
+  }
+
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
   }
 }
