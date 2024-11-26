@@ -63,6 +63,7 @@
   .footerList {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .footerLogo {
@@ -72,5 +73,6 @@
   .footerContainer {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 }
