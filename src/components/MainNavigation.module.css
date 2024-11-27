@@ -114,4 +114,8 @@
   .langIcon {
     font-size: 1.5rem;
   }
+
+  .dropdownContent button {
+    font-size: 1.2rem;
+  }
 }

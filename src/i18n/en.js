@@ -189,6 +189,19 @@ export const en = {
     facebook: "Facebook",
   },
 
+  gdpr: {
+    title: "WHAT DATA WE COLLECT?",
+    text: `
+    <div>
+      <p>
+      We collect the correspondence between you and us, regardless of whether it is through the contacts, e-mail, Viber, WhatsUp, Facebook or other means of communication entered by you on the page. If you fill in your names, phone number, or other data with your correspondence, we also save them to serve you as a customer!
+      </p>
+      <p>
+        We use the https://statcounter.com web counter for visits for statistical information based on the usability of our site.
+      </p>
+    </div>`,
+  },
+
   covidSupport: {
     text: `<h1>
         Support for medium-sized enterprises to overcome the economic consequences of the COVID-19 pandemic
