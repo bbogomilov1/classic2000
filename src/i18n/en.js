@@ -177,7 +177,7 @@ export const en = {
     aboutUs: "About Classic 2000 Ltd.",
     services: "Transport services",
     cookies: "GDPR",
-    signals: "Filing reports under the ЗЗЛПСПОИН",
+    signals: "Filing reports",
     project: "EU Fund",
 
     contacts: "Contacts",
