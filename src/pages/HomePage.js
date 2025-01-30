@@ -1,6 +1,6 @@
 import styles from "./HomePage.module.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import homeImage from "../static/home.jpg";
+import homeImage from "../static/home.webp";
 import TitleSection from "../components/home/TitleSection.js";
 import Statistics from "../components/home/Statistics.js";
 import OurOffers from "../components/home/OurOffers.js";

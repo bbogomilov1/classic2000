@@ -16,7 +16,7 @@
 
 .container::before {
   content: "";
-  background-image: url("../../static/storages.jpg");
+  background-image: url("../../static/storages.webp");
   background-size: cover;
   background-position: center;
   position: absolute;

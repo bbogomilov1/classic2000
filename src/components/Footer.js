@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import styles from "./Footer.module.css";
-import fulllogo from "../static/textlogo.png";
+import fulllogo from "../static/textlogo.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPhoneVolume,

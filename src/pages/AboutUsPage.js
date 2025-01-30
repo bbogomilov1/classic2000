@@ -2,8 +2,8 @@ import AboutUsCompoent from "../components/about-us/AboutUsComponent";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import styles from "./AboutUsPage.module.css";
 import { useTranslation } from "react-i18next";
-import aboutImage from "../static/about-us.png";
-import transportImage from "../static/our-services.png";
+import aboutImage from "../static/about-us.webp";
+import transportImage from "../static/our-services.webp";
 import OurGoals from "../components/about-us/OurGoals";
 
 function AboutUsPage() {

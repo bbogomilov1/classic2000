@@ -2,10 +2,10 @@ import styles from "./OurOffers.module.css";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
-import goodsImage from "../../static/IMG_0472.jpg";
-import servicesImage from "../../static/services.png";
-import storagesImage from "../../static/storages.jpg";
-import parkingImage from "../../static/parking.jpg";
+import goodsImage from "../../static/IMG_0472.webp";
+import servicesImage from "../../static/services.webp";
+import storagesImage from "../../static/storages.webp";
+import parkingImage from "../../static/parking.webp";
 
 const OurOffers = () => {
   const navigate = useNavigate();

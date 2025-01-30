@@ -1,6 +1,6 @@
 import styles from "./ServiceComponent.module.css";
 import { useTranslation } from "react-i18next";
-import servicesImage from "../../static/services.png";
+import servicesImage from "../../static/services.webp";
 
 const ServiceComponent = () => {
   const { t } = useTranslation("services");

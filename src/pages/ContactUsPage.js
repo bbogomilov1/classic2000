@@ -1,6 +1,6 @@
 import styles from "./ContactUsPage.module.css";
-import contactsImage from "../static/home.jpg";
-import aboutImage from "../static/about-us.png";
+import contactsImage from "../static/home.webp";
+import aboutImage from "../static/about-us.webp";
 import { Col, Container, Row } from "react-bootstrap";
 import FormComponent from "../components/home/FormComponent";
 import ContactsComponent from "../components/contact-us/ContactsComponent";

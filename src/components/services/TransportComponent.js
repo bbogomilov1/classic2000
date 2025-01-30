@@ -1,6 +1,6 @@
 import styles from "./TransportComponent.module.css";
 import { useTranslation } from "react-i18next";
-import transportImage from "../../static/IMG_0472.jpg";
+import transportImage from "../../static/IMG_0472.webp";
 
 const TransportComponent = () => {
   const { t } = useTranslation("services");
