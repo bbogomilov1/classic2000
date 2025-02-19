@@ -112,7 +112,7 @@ const Footer = () => {
                     aria-hidden="true"
                   />
                   <a
-                    href="/contacts"
+                    href={getLocalizedUrl("/contacts")}
                     title="Свържете се с нас чрез страницата за контакти"
                   >
                     {t("request")}
