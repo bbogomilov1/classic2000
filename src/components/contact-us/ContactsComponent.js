@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPhoneVolume,
+  faEnvelope,
   faClock,
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
@@ -29,6 +30,23 @@ const ContactsComponent = () => {
           </a>
           <a href="tel:+359899610075" title="Обадете се на сервизния телефон">
             {t("phoneDesc2")}
+          </a>
+        </div>
+
+        <h2 className={styles.contactsSubtitle}>
+          <FontAwesomeIcon
+            icon={faEnvelope}
+            className={styles.statisticsIcon}
+            aria-hidden="true"
+          />
+          E-mail:
+        </h2>
+        <div className={styles.contactsDescription}>
+          <a
+            href="mailto:office@classic2000.bg"
+            title="Свържете се с нас чрез офис имейл"
+          >
+            office@classic2000.bg
           </a>
         </div>
 

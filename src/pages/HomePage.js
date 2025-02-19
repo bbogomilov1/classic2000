@@ -37,7 +37,6 @@ function HomePage() {
 
       <Statistics />
       <OurOffers />
-      <FormComponent />
     </div>
   );
 }

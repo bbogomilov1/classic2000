@@ -44,9 +44,6 @@ function ContactUsPage() {
           <Col className={styles.contactsCol}>
             <ContactsComponent />
           </Col>
-          <Col className={styles.contactsCol}>
-            <FormComponent />
-          </Col>
         </Row>
       </Container>
 
