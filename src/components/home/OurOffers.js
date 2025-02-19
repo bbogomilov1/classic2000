@@ -9,7 +9,10 @@ import parkingImage from "../../static/parking.webp";
 
 const OurOffers = () => {
   const navigate = useNavigate();
-  const { t } = useTranslation("home");
+  const { t, i18n } = useTranslation("home");
+  const currentLanguage = i18n.language;
+
+  const getLocalizedUrl = (path) => `/${currentLanguage}${path}`;
 
   return (
     <div className={styles.container}>
@@ -28,7 +31,7 @@ const OurOffers = () => {
               <button
                 className={styles.readMoreButton}
                 aria-label="Прочетете повече за транспортните услуги"
-                onClick={() => navigate("/services")}
+                onClick={() => navigate(getLocalizedUrl("/services"))}
               >
                 {t("ourOffers.button")}
               </button>
@@ -46,7 +49,7 @@ const OurOffers = () => {
               <button
                 className={styles.readMoreButton}
                 aria-label="Прочетете повече за услугите по складиране"
-                onClick={() => navigate("/services")}
+                onClick={() => navigate(getLocalizedUrl("/services"))}
               >
                 {t("ourOffers.button")}
               </button>
@@ -67,7 +70,7 @@ const OurOffers = () => {
               <button
                 className={styles.readMoreButton}
                 aria-label="Прочетете повече за охраняемия паркинг"
-                onClick={() => navigate("/services")}
+                onClick={() => navigate(getLocalizedUrl("/services"))}
               >
                 {t("ourOffers.button")}
               </button>
@@ -85,7 +88,7 @@ const OurOffers = () => {
               <button
                 className={styles.readMoreButton}
                 aria-label="Прочетете повече за сервизните услуги"
-                onClick={() => navigate("/services")}
+                onClick={() => navigate(getLocalizedUrl("/services"))}
               >
                 {t("ourOffers.button")}
               </button>
